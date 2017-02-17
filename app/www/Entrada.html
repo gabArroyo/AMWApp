@@ -11,7 +11,11 @@
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 		
-		<title>Login</title>
+		<script type="text/javascript" src="js/webPost.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		
+		<title>Entrada</title>
     </head>
     
 	<body>
@@ -24,15 +28,11 @@
 			<!-- /content -->
 			<div data-role="content" class="RegistroLogin">	
 				<img id="lp" src="img/LogoApp.png" alt="LogoApp" width="256" height="256">
-				<div class ="yolo">
-					<form action="/action_page.php">
-						<div class="ui-grid-none" id="field">
-							<input type="button" value="Registro" id="buttonLogin"/>
-						</div>
+				<div class ="dato">
+					<form>
+						<div><a href="Registro.html" id="buttonLink"><input type="button" value="Registro"/></a></div>
 						
-						<div class="ui-grid-none" id="field">
-							<input type="button" value="Login" id="buttonLogin"/>
-						</div>
+						<div><a href="Login.html" id="buttonLink"><input type="button" value="Login"/></a></div>
 					</form>
 				</div>
 			</div>

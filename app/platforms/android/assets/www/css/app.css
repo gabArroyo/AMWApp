@@ -1,0 +1,49 @@
+<style>
+	.ui-page {
+		background-image: url("img/fondo.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size:100% 100%;
+	}
+	.ui-content{
+		background: transparent;
+	}
+	
+	div.RegistroLogin{
+		min-height: 100%;
+		width: 50%;
+		margin: auto;
+		text-align: center;
+	}
+	
+	.RegistroLogin #field{
+		min-width: 100%;
+		display: block;
+	}
+	
+	.RegistroLogin #iconoDiv{
+		text-align: center;
+	}
+	
+	.RegistroLogin #icono{
+		background-color: #f44336;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 0 auto;
+	}
+	
+	.RegistroLogin #input{
+		border: none;
+		color: white;
+		text-align: center;
+	}
+	
+	#buttonLogin{
+		
+	}
+	
+</style>
