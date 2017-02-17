@@ -19,8 +19,7 @@ function webServiceRegister(user, pass, nias){
 				alert(retornarErrorRegister(data));
 			else{
 				registered = data.status.data.registered;
-				window.location = "Entrar.html";
-				$("#datosLoginORegistro").replaceWith( "<h2>New heading</h2>" );
+				document.getElementById("contenidoLogin").innerHTML = "<p>Hola, usuario: " + user + "\nRegistro completado.</p>";
 			}
 		},
 		failure: function(errMsg){
@@ -69,11 +68,12 @@ function webServiceAuthenticate(user, pass){
 			if (success != true)
 				alert(retornarErrorAuthenticate(data));
 			else{
+				
 				darreraAutentic = data.status.data.darrera_autenticacio;
 				identificadorGrup =  data.status.data.identificador_grup;
 				integrants =  data.status.data.integrants;
-				window.location = "Entrar.html";
-				document.getElementById("datosLoginORegistro").innerHTML = "whatever";
+				document.getElementById("contenidoLogin").innerHTML = "<p> Ultima autenticación: " + darreraAutentic + " </p>\
+				<p>Identificador: " + identificadorGrup + " </p><p> Integrantes: " + integrants + " </p>";
 			}
 		},
 		failure: function(errMsg){
