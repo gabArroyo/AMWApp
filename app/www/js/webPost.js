@@ -1,7 +1,8 @@
 function getRegisterDataAndDoCallWebServices(){
 	var user = document.getElementById('user').value;
 	var pass = document.getElementById('pass').value;
-	var nias = ["u"+document.getElementById('NIA1').value, "u"+document.getElementById('NIA2').value];
+	var nias = ["u"+document.getElementById('NIA1').value, "u"+document.getElementById('NIA2').value,
+			   "u"+document.getElementById('NIA3').value,];
 	webServiceRegister(user, pass, nias);
 }
 
@@ -13,13 +14,13 @@ function webServiceRegister(user, pass, nias){
 		contentType: "application/x-www-form-urlencoded; charset=utf-8",
 		dataType: "json",
 		success: function(data){
-			window.location = "Entrar.html";
-			$("#datosLoginORegistro").replaceWith( "<h2>New heading</h2>" );
-			succes = data.status.succes;
-            if (succes != true)
+			success = data.status.success;
+            if (success != true)
 				alert(retornarErrorRegister(data));
 			else{
 				registered = data.status.data.registered;
+				window.location = "Entrar.html";
+				$("#datosLoginORegistro").replaceWith( "<h2>New heading</h2>" );
 			}
 		},
 		failure: function(errMsg){
@@ -64,13 +65,15 @@ function webServiceAuthenticate(user, pass){
 		contentType: "application/x-www-form-urlencoded; charset=utf-8",
 		dataType: "json",
 		success: function(data){
-			succes = data.status.succes
-			if (succes != true)
+			success = data.status.success
+			if (success != true)
 				alert(retornarErrorAuthenticate(data));
 			else{
 				darreraAutentic = data.status.data.darrera_autenticacio;
 				identificadorGrup =  data.status.data.identificador_grup;
 				integrants =  data.status.data.integrants;
+				window.location = "Entrar.html";
+				document.getElementById("datosLoginORegistro").innerHTML = "whatever";
 			}
 		},
 		failure: function(errMsg){
@@ -93,16 +96,5 @@ function retornarErrorAuthenticate(data){
 	else
 		return "Unknown error";
 }
-
-function onDeviceReady(){
-	//webServiceAuthenticate("03", "qwerty");
-	webServiceRegister('03', 'AAA',["u111", "u222"]);
-}
-
-$(document).ready(function(){
-	onDeviceReady();
-})
-
-
 
 //document.addEventListener("deviceReady", onDeviceReady, false);
