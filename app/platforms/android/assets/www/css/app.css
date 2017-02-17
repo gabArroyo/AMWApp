@@ -16,34 +16,37 @@
 		text-align: center;
 	}
 	
-	.RegistroLogin #field{
-		min-width: 100%;
-		display: block;
-	}
-	
-	.RegistroLogin #iconoDiv{
-		text-align: center;
-	}
-	
 	.RegistroLogin #icono{
 		background-color: #f44336;
 		border: none;
 		color: white;
-		padding: 15px 32px;
 		text-decoration: none;
+		font-size: 20px;
+	}
+	
+	.RegistroLogin  input, label{
 		display: inline-block;
-		font-size: 16px;
-		margin: 0 auto;
 	}
 	
-	.RegistroLogin #input{
-		border: none;
-		color: white;
-		text-align: center;
+	#buttonLink:link{
+		text-decoration: none;
 	}
 	
-	#buttonLogin{
-		
+	#buttonLink:visited{
+		text-decoration: none;
+	}
+	
+	#buttonLink:hover {
+		text-decoration: none;
+	}
+
+	#buttonLink:active {
+		text-decoration: none;
+	}
+	
+	.info {
+		min-width: 250px;
+		min-height: 650px;
 	}
 	
 </style>

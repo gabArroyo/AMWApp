@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-		<meta charset="UTF-8">
-		<meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<meta charset="UTF-8"/>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' gap://ready file://* *;
+															img-src 'self' data:;
+															style-src 'self' 'unsafe-inline';
+															connect-src *;
+															script-src 'self' 'unsafe-inline' 'unsafe-eval';"/>
 		
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
-		<link rel="stylesheet" href="css/app.css" />
-		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 		
+		<meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+		
+		<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" href="css/app.css"/>
+		
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.5.0-alpha.1.js"></script>
+		<script type="text/javascript" src="js/webPost.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
 		<title>Login</title>
     </head>
     
@@ -22,27 +31,21 @@
 			</div>
 
 			<!-- /content -->
-			<div data-role="content" class="RegistroLogin">	
+			<div id="contenidoLogin" data-role="content" class="RegistroLogin">	
 				<img id="lp" src="img/LogoApp.png" alt="LogoApp" width="256" height="256">
-				<div class ="yolo">
-					<form action="/action_page.php">
-						<div class="ui-grid-a" id="field">
-							<div class="ui-block-a" id="iconoDiv">
-								<p for="name" id="icono">Nombre</p>
-							</div>
-							<div class="ui-block-b" id="input">
-								<input type="text" id="name" name="name" placeholder="Nombre.">
-							</div>
+				<div class ="dato">
+					<form>
+						<div>
+							<label for="user" id="icono">Nombre</label>
+							<input type="text" id="user" name="user" maxlength="2" placeholder="Nombre de Usuario."/>
 						</div>
 						
-						<div class="ui-grid-a" id="field">
-							<div class="ui-block-a" id="iconoDiv">
-								<p for="pass" id="icono">Contraseña</p>
-							</div>
-							<div class="ui-block-b" id="input">
-								<input type="password" id="pass" name="contraseña" placeholder="Contraseña.">
-							</div>
+						<div>
+							<label for="pass" id="icono">Contraseña</label>
+							<input type="password" id="pass" name="contraseña" maxlength="32" placeholder="Contraseña."/>
 						</div>
+						
+						<div><input type="submit" value="Submit" onclick="getLoginDataAndDoCallWebServices()"/></div>
 					</form>
 				</div>
 			</div>
