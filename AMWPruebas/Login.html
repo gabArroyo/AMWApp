@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' gap://ready file://* *;
+															img-src * 'self' data:;
+															style-src * 'self' 'unsafe-inline';
+															connect-src *;
+															script-src * 'self' 'unsafe-inline' 'unsafe-eval';"/>
+
+
+		<meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+
+    <link rel="stylesheet" href="css/app.css"/>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+
+		<title>Login</title>
+    </head>
+
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+        <h1>Login</h1>
+			</div><!-- /header -->
+
+			<!-- /content -->
+			<div data-role="content" class="RegistroLogin">
+        <div>
+				<img id="logo" src="img/LogoApp.png" alt="LogoApp">
+				<div>
+					<form>
+            <div class="insertContainer">
+              <label for="user" id="icono">Nombre</label>
+              <input type="text" id="user" name="user" maxlength="2" placeholder="Nombre de Usuario."/>
+            </div>
+
+						<div class="insertContainer">
+							<label for="pass" id="icono">Contraseña</label>
+							<input type="password" id="pass" name="contraseña" maxlength="32" placeholder="Contraseña."/>
+						</div>
+					</form>
+					<div class="insertContainer"><a id="buttonLink" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left" onclick="getLoginDataAndDoCallWebServices()">Submit</a></div>
+				</div>
+			</div>
+    </div>
+		</div>
+
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/webPost.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

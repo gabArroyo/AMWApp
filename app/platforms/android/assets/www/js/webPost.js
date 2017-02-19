@@ -96,5 +96,3 @@ function retornarErrorAuthenticate(data){
 	else
 		return "Unknown error";
 }
-
-//document.addEventListener("deviceReady", onDeviceReady, false);

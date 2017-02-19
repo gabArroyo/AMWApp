@@ -3,21 +3,22 @@
     <head>
 		<meta charset="UTF-8"/>
 		<meta http-equiv="Content-Security-Policy" content="default-src 'self' gap://ready file://* *;
-															img-src 'self' data:;
-															style-src 'self' 'unsafe-inline';
+															img-src * 'self' data:;
+															style-src * 'self' 'unsafe-inline';
 															connect-src *;
-															script-src 'self' 'unsafe-inline' 'unsafe-eval';"/>
+															script-src * 'self' 'unsafe-inline' 'unsafe-eval';"/>
 		
 		
 		<meta name="format-detection" content="telephone=no"/>
         <meta name="msapplication-tap-highlight" content="no"/>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
 		
-		<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
 		<link rel="stylesheet" href="css/app.css"/>
 		
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.5.0-alpha.1.js"></script>
+		
 		<script type="text/javascript" src="js/webPost.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<title>Login</title>
@@ -25,13 +26,13 @@
     
 	<body>
 		<div data-role="page">
-			<!-- /header -->
 			<div data-role="header">
-				<h1>Login</h1>
-			</div>
+			</div><!-- /header -->
 
 			<!-- /content -->
-			<div id="contenidoLogin" data-role="content" class="RegistroLogin">	
+			<div id="contenidoLogin" data-role="content" class="RegistroLogin">
+			
+				<h1>Login</h1>
 				<img id="lp" src="img/LogoApp.png" alt="LogoApp" width="256" height="256">
 				<div class ="dato">
 					<form>
