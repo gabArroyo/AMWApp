@@ -1,56 +1,46 @@
-<!DOCTYPE html>
 <html>
-    <head>
+	<head>
 		<meta charset="UTF-8"/>
 		<meta http-equiv="Content-Security-Policy" content="default-src 'self' gap://ready file://* *;
-															img-src * 'self' data:;
-															style-src * 'self' 'unsafe-inline';
-															connect-src *;
-															script-src * 'self' 'unsafe-inline' 'unsafe-eval';"/>
-		
+		img-src * 'self' data:; style-src * 'self' 'unsafe-inline'; connect-src *; script-src * 'self' 'unsafe-inline' 'unsafe-eval';"/>
+
 		<meta name="format-detection" content="telephone=no"/>
-        <meta name="msapplication-tap-highlight" content="no"/>
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
-		
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+		<meta name="msapplication-tap-highlight" content="no"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+
 		<link rel="stylesheet" href="css/app.css"/>
-		
-		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-		<script type="text/javascript" src="js/webPost.js"></script>
-		<script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/linkScript.js"></script>
-		<script>
-			function onLoad() {
-				document.addEventListener("deviceready", onDeviceReady, false);
-			}
-			
-			function onDeviceReady() {
-				window.location.href = "Entrada.html";
-			}
-		</script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
 		<title>Entrada</title>
-    </head>
-    
+	</head>
 	<body>
 		<div data-role="page">
-			
-			<!-- /header -->
 			<div data-role="header">
 				<h1>Entrada</h1>
 			</div>
 
-			<!-- /content -->
-			<div data-role="content" class="RegistroLogin">	
-				<img id="lp" src="img/LogoApp.png" alt="LogoApp" width="256" height="256" />
-				<div class ="dato">
-					<form>
-						<div><input type="button" value="Registro" onclick="goToLink('Registro.html')"/></div>
-						<div><input type="button" value="Login" onclick="goToLink('Login.html')"/></div>
-					</form>
+			<div data-role="main" class="ui-content">
+				<div>
+					<img id="logo" src="img/LogoApp.png" alt="LogoApp" width="256" height="256" />
+					<div class ="entradaContainer"><a id="buttonLink" style="width:30%;" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left" href="Registro.html">Registro</a></div>
+					<div class ="entradaContainer"><a id="buttonLink" style="width:30%;" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left" href="Login.html">Login</a></div>
+					<div class ="entradaContainer"><a id="buttonLink" style="width:30%;" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left" href="ShowList.html">Show List</a></div>
 				</div>
+
 			</div>
+
+			<div data-role="footer"><h1></h1></div>
 		</div>
+		<!-- Include the jQuery library -->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- Include the jQuery Mobile library -->
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script>
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+		</script>
 	</body>
+
 </html>
