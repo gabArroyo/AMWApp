@@ -1,0 +1,202 @@
+  #logo{
+    display : block;
+    margin : auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .entradaContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .insertContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  #icono{
+    text-align: center;
+    flex-basis: 0;
+    min-width: 25%;
+  }
+
+  #user, #pass{
+    min-width: 45%;
+    flex-basis: 0;
+  }
+
+	#buttonLink:link{
+		text-decoration: none;
+	}
+
+	#buttonLink:visited{
+		text-decoration: none;
+	}
+
+	#buttonLink:hover {
+		text-decoration: none;
+	}
+
+	#buttonLink:active {
+		text-decoration: none;
+	}
+
+  .showSlider {
+    width: 80%;
+    margin: auto;
+  }
+
+  .showSlider span{
+    padding: 20px;
+  }
+
+  #showContainer{
+    display:flex;
+    background-color: #bcac9b;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #showInfo{
+    margin: auto;
+    margin-left: 5%;
+  }
+
+  #showInfoId{
+    background-color: #e6aa68;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px 0px;
+    color: white;
+  }
+
+  #showInfoTitle{
+    background-color: #ddc9b4;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px 0px;
+    color: white;
+  }
+
+  #showInfoNumSeasons{
+    background-color: #c17c74;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px 0px;
+    color: white;
+  }
+
+  #fullShowContainer{
+    display: flex;
+    background-color: #d3d4d9;
+    border-radius: 4px;
+    flex-wrap: wrap;
+  }
+
+  #fullShowInfoTitle{
+    background-color: #252627;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px 0px;
+    color: white;
+    min-width: 100%;
+    margin: 0;
+	}
+
+  #fullShowInfoDescription{
+    background-color: #eee5e9;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #fullShowImageContainer{
+    display: flex;
+    background-color: #eee5e9;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #fullShowImage{
+    height: 256px;
+    width: 256px;
+  }
+
+  #fullShowActors{
+    background-color: #eee5e9;
+    width: 100%;
+  }
+
+  #fullShowActorsTitle{
+    background-color: #1f2421;
+    color: white;
+    margin: 0;
+    text-align: center;
+  }
+
+  #fullShowSeasons{
+    background-color: #1f2421;
+    color: white;
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #fullShowID{
+    background-color: #1f2421;
+    color: white;
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #fullShowButtonLink{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #seasonContainer{
+    margin: 2% 0% 2% 0%;
+    text-align: center;
+    color: white;
+    background-color: #435058;
+  }
+
+  #seasonID{
+      margin: 0;
+      padding: 5px;
+      background-color: #696773;
+  }
+
+  #seasonName{
+      margin: 0;
+      padding: 5px;
+      background-color: #696773;
+  }
+
+  #seasonShortName{
+        margin: 0;
+        padding: 5px;
+        background-color: #696773;
+  }
+
+  #seasonNumberChapters{
+        margin: 0;
+        padding: 5px;
+        background-color: #696773;
+  }
+
+  #seasonEmission{
+        margin: 0;
+        padding: 5px;
+        background-color: #696773;
+  }
