@@ -1,0 +1,71 @@
+html,
+body
+#login{
+  height: 91%;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-content {
+  height: inherit;
+  padding: 0;
+}
+
+.logo {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.logo img{
+  display : block;
+  margin : auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.loginForm {
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  max-width: 400px;
+}
+
+.loginForm form{
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(192, 192, 192, 0.8);
+  border-radius: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.loginInputContainer{
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.loginInput{
+  text-align: center !important;
+}
+
+.loginRecuperarPassword{
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.loginRecuperarPassword a{
+  display: block;
+  text-align: center;
+}
+
+.loginRecuperarContraseña{
+
+}
+
+.loginSubmit{
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 50%;
+}

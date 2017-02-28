@@ -1,0 +1,14 @@
+.avatarInfo{
+  height: 64px;
+  min-height: 64px;
+}
+
+.avatarImg{
+  position: absolute;
+  left: -1;
+  top: -1;
+  max-width: 96px;
+  max-height: 96px;
+  border: 10px solid #da2429;
+  border-radius: 200px;
+}
