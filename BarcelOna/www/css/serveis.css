@@ -1,0 +1,23 @@
+.container{
+  background-color: green;
+}
+
+.service{
+  background-color: yellow;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.serviceImage{
+  display: block;
+  max-width: 40vw;
+  max-height: 164px;
+}
+
+.serviceContent{
+  background-color: blue;
+  width: 35vw;
+  margin: 0 auto;
+}
