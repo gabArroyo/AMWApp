@@ -1,0 +1,91 @@
+.aplicacionesContainer{
+  width: 80vw;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.tiposApps{
+  padding-bottom: 20px;
+}
+
+.tiposAppsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoriaApp{
+  width: 75%;
+}
+
+.title{
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #da2429;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.appContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5%;
+  padding: 15px;
+}
+
+.appImage{
+  width: 128px;
+  height: 128px;
+  max-width: 25vw;
+	border-radius: 15%;
+}
+
+.appInfo{
+  width: 40%;
+  max-width: 40%;
+  min-height: 100%;
+
+  word-wrap: break-word;
+  margin-left: 10px;
+}
+
+.nota{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 30vw;
+  max-width: 72px;
+  max-height: 72px;
+
+  border: 5px white solid;
+	border-radius: 50%;
+}
+
+.buena{
+  background-color: #9ece9a;
+}
+
+.media{
+  background-color: #ff9f1c;
+}
+
+.mala{
+  background-color: #e71d36;
+}
+
+.nota p{
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}

@@ -11,59 +11,133 @@
 		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/serveis.css"/>
+
+		<link rel ="stylesheet" href="css/header.css"/>
+		<link rel="stylesheet" href="css/aplicaciones.css"/>
     <link rel="stylesheet" href="css/slideshow.css"/>
-		<title>Menu</title>
+		<title>Aplicaciones</title>
 	</head>
 	<body>
 		<div data-role="page">
 
-			<div class="headerInfoContainer" data-role="header" >
-				<div class="ui-grid-b avatarInfoContainer">
-			    <div class="ui-block-a avatarInfo">
-							<p>Gabriel Arroyo Hinojosa</p>
-					</div>
-					<button class="options">OPCIONES</button>
+			<div class="headerInfoContainer" data-role="header">
+				<div class="avatarInfo">
+					<p>Gabriel Arroyo Hinojosa</p>
+					<button><img class="avatarFlag" src="img/cat.png"/></button>
 				</div>
+				<button class="avisos">0 avisos</button>
+				<button class="options">OPCIONES</button>
 				<img class="avatarImg" src="img/avatar.jpg" />
 			</div>
 
 			<div data-role="main" class="ui-content">
+				<div class="aplicacionesContainer">
+					<p class="title">El ayuntamiento recomienda...</p>
+					<div class="slideshow-container">
+						<div class="slidesAyuntamiento fade">
+							<div class="appContainer">
+								<img class="appImage" src="img/apps/Glovo.png">
+								<div class="appInfo">App1</div>
+								<div class="nota mala"><p>4,9</p></div>
+	           </div>
+	          </div>
 
-        <div class="slideshow-container">
+						<div class="slidesAyuntamiento fade">
+							<div class="appContainer">
+								<img class="appImage" src="img/apps/IParcsBCN.jpg">
+								<div class="appInfo">App1</div>
+								<div class="nota buena"><p>8,9</p></div>
+	           </div>
+	          </div>
 
-          <div class="mySlides fade">
-           <img class="appImage" src="img/avatar.jpg">
-           <div class="text">Caption Text</div>
-           <div class="nota">
-             <div class="round-button-circle">
-               <a href="http://example.com" class="round-button">Button!!</a>
-             </div>
-             8,9
-           </div>
-          </div>
+	          <div class="slidesAyuntamiento fade">
+							<div class="appContainer">
+								<img class="appImage" src="img/apps/IPlatgesBCN.png">
+								<div class="appInfo">App1</div>
+								<div class="nota media"><p>6</p></div>
+	           </div>
+	          </div>
 
-          <div class="mySlides fade">
-           <img class="appImage" src="img/img_lights_wide.jpg">
-           <div class="text">Caption Two</div>
-          </div>
+	          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	        </div>
+	        <div style="text-align:center">
+	          <span class="dotAyuntamiento" onclick="currentSlide(1)"></span>
+	          <span class="dotAyuntamiento" onclick="currentSlide(2)"></span>
+	          <span class="dotAyuntamiento" onclick="currentSlide(3)"></span>
+	        </div>
+				</div>
 
-          <div class="mySlides fade">
-           <img class="appImage" src="img/img_nature_wide.jpg">
-           <div class="text">Caption Three</div>
-          </div>
+				<div class="aplicacionesContainer">
+					<p class="title">Las apps más descargadas...</p>
+					<div class="slideshow-container">
+						<div class="slidesMasRecomendadas fade">
+							<div class="appContainer">
+								<img class="appImage" src="img/apps/Glovo.png">
+								<div class="appInfo">App1</div>
+								<div class="nota mala"><p>4,9</p></div>
+						 </div>
+						</div>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
+						<div class="slidesMasRecomendadas fade">
+							<div class="appContainer">
+								<img class="appImage" src="img/apps/IParcsBCN.jpg">
+								<div class="appInfo">App1</div>
+								<div class="nota buena"><p>8,9</p></div>
+						 </div>
+						</div>
 
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+						<div class="slidesMasRecomendadas fade">
+							<div class="appContainer">
+								<img class="appImage" src="img/apps/IPlatgesBCN.png">
+								<div class="appInfo">App1</div>
+								<div class="nota media"><p>6</p></div>
+						 </div>
+						</div>
+
+						<a class="prev" onclick="plusSlidesMasRecomendadas(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlidesMasRecomendadas(1)">&#10095;</a>
+					</div>
+					<div style="text-align:center">
+						<span class="dotMasRecomendadas" onclick="currentSlideMasRecomendadas(1)"></span>
+						<span class="dotMasRecomendadas" onclick="currentSlideMasRecomendadas(2)"></span>
+						<span class="dotMasRecomendadas" onclick="currentSlideMasRecomendadas(3)"></span>
+					</div>
+				</div>
+
+				<div class="aplicacionesContainer tiposApps">
+					<p class="title">Todas las apps</p>
+					<div class="tiposAppsContainer">
+						<div class="ui-grid-a categoriaApp">
+							<div class="ui-block-a">
+								<a href="index.html" data-role="button">Ocio</a>
+							</div>
+							<div class="ui-block-b">
+								<a href="index.html" data-role="button">Deportes</a>
+							</div>
+						</div>
+						<div class="ui-grid-a categoriaApp">
+							<div class="ui-block-a">
+								<a href="index.html" data-role="button">Cultura</a>
+							</div>
+							<div class="ui-block-b">
+								<a href="index.html" data-role="button">Turismo</a>
+							</div>
+						</div>
+						<div class="ui-grid-a categoriaApp">
+							<div class="ui-block-a">
+								<a href="index.html" data-role="button">Restaurantes</a>
+							</div>
+							<div class="ui-block-b">
+								<a href="index.html" data-role="button">Otros</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
+				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
 			</div>
 		</div>
 

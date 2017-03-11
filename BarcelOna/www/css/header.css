@@ -1,0 +1,70 @@
+.headerInfoContainer{
+  height: 56px;
+  max-height: 56px;
+}
+
+.avatarImg{
+  position: absolute;
+  left: -1;
+  top: -1;
+
+  width: 96px;
+  max-width: 96px;
+  height: 96px;
+  max-height: 96px;
+
+  border: 10px solid #da2429;
+  border-radius: 200px;
+}
+
+.avatarInfo{
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  width: 35vw;
+  max-width: 35vw;
+  height: 46px;
+  max-height: 46px;
+
+  background-color: #9a031e;
+  border-radius: 10px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15vw;
+  padding: 0 20px;
+}
+
+.avatarInfo p{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.avatarInfo button{
+  padding-right: 15px;
+}
+
+.avatarFlag{
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.avisos{
+  position: absolute;
+  top: 5px;
+  left: 65vw;
+  height: 46px;
+}
+
+.options{
+  position: absolute;
+  top: 5px;
+  left: 85%;
+  height: 46px;
+}
+
+.navOptions{
+  margin: 0 auto;
+  text-align: center;
+}

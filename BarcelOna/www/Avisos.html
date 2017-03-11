@@ -10,13 +10,15 @@
 
 		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-		<link rel="stylesheet" href="css/menu.css"/>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
+
+		<link rel="stylesheet" href="css/avisos.css"/>
 		<link rel ="stylesheet" href="css/header.css"/>
-		<title>Menu</title>
+
+		<title>Avisos</title>
 	</head>
 	<body>
-		<div class="page" data-role="page">
+		<div data-role="page">
 			<div class="headerInfoContainer" data-role="header">
 				<div class="avatarInfo">
 					<p>Gabriel Arroyo Hinojosa</p>
@@ -28,35 +30,32 @@
 			</div>
 
 			<div data-role="main" class="ui-content">
-				<div class="container">
-					<div id="lineaIconos1" class="ui-grid-a lineaIconos">
-						<div class="ui-block-a">
-							<a href=""><img class="icono" src="img/avatar.jpg" /></a>
-						</div>
-						<div class="ui-block-b">
-							<a href=""><img class="icono" src="img/avatar.jpg" /></a>
-						</div>
-					</div>
-					<div id="lineaIconos2" class="ui-grid-a lineaIconos">
-						<div class="ui-block-a">
-							<a href=""><img class="icono" src="img/avatar.jpg" /></a>
-						</div>
-						<div class="ui-block-b">
-							<a href=""><img class="icono" src="img/avatar.jpg" /></a>
-						</div>
-					</div>
-					<div id="lineaIconos3" class="ui-grid-a lineaIconos">
-						<div class="ui-block-a">
-							<a href=""><img class="icono" src="img/avatar.jpg" /></a>
-						</div>
-						<div class="ui-block-b">
-							<a href=""><img class="icono" src="img/avatar.jpg" /></a>
-						</div>
-					</div>
-				</div>
+				<div class="avisosContainer">
+					<p class="title">Avisos</p>
+
+					<a href="index.html" class="linkAviso"><div class="aviso">
+						<img class="serviceImage" src="img/serveis/iconoPolicia.png"/>
+						<p>La policía encontró tu cartera. Pasa a recogerla a: BLA BLA BLA</p>
+					</div></a>
+					<a href="index.html" class="linkAviso"><div class="aviso">
+						<img class="serviceImage" src="img/serveis/iconoEmergencias.png"/>
+						<p>Los resultados de tus análisis ya están listos. Pasa a recogerlos a: BLA BLA BLA</p>
+					</div></a>
+					<a href="index.html" class="linkAviso"><div class="aviso">
+						<img class="serviceImage" src="img/serveis/iconoBomberos.png"/>
+						<p>Tu casa está ardiendo.</p>
+					</div></a>
+					<a href="index.html" class="linkAviso"><div class="aviso">
+						<img class="serviceImage" src="img/serveis/iconoBiblioteca.png"/>
+						<p>Quedan tres días para entregar uno de tus libros.</p>
+					</div></a>
+
+			</div>
+
+			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
+				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
 			</div>
 		</div>
-
 		<script src="cordova.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/common.js"></script>
