@@ -1,0 +1,89 @@
+.ayuntamientoContainer{
+  width: 90vw;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.title{
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #da2429;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.logoAyuntamiento{
+  display: block;
+  width: 80%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkAyuntamiento{
+  width: 50%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleNew{
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 5px;
+  background-color: #da2429;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.lineaNoticia{
+  padding-bottom: 15px;
+}
+
+.noticia{
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.noticia a, a:hover{
+  text-decoration: none;
+}
+
+.titleArticle{
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 5px;
+  background-color: #da2429;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.lineaArticulo{
+  padding-bottom: 15px;
+}
+
+.articulo{
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.articulo a, a:hover{
+  text-decoration: none;
+}
+
+.iconoImg{
+  max-width: 75%;
+  max-height: 50%;
+
+}

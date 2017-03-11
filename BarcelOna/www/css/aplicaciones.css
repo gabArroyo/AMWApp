@@ -1,5 +1,6 @@
 .aplicacionesContainer{
-  width: 80vw;
+  width: 90vw;
+  min-width: 325px;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;

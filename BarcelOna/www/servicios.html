@@ -10,14 +10,15 @@
 
 		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
 
+		<link rel="stylesheet" href="css/serveis.css"/>
 		<link rel ="stylesheet" href="css/header.css"/>
-		<link rel="stylesheet" href="css/menu.css"/>
+
 		<title>Menu</title>
 	</head>
 	<body>
-		<div class="page">
+		<div data-role="page">
 			<div class="headerInfoContainer" data-role="header">
 				<div class="avatarInfo">
 					<p>Gabriel Arroyo Hinojosa</p>
@@ -29,43 +30,50 @@
 			</div>
 
 			<div data-role="main" class="ui-content">
-				<div class="functionsContainer">
-					<p class="title">Menu</p>
-					<div class="ui-grid-a lineaIconos">
-						<div class="ui-block-a icono">
-							<a href="ayuntamiento.html">
-								<button>Ayuntamiento</button>
-								<img class="iconoImg" src="img/funcionalidades/iconoAyuntamiento.png" />
+				<div class="serviceContainer">
+					<p class="title">Servicios</p>
+	        <div class="ui-grid-a row">
+						<div class="ui-block-a service">
+							<a href="index.html">
+								<img class="serviceImage" src="img/serveis/iconoPolicia.png"/>
 							</a>
+							<a class="serviceButton" href="index.html" data-role="button">Policía</a>
 						</div>
-						<div class="ui-block-b icono">
-							<a href="servicios.html">
-								<button>Servicios de la ciudad</button>
-								<img class="iconoImg" src="img/funcionalidades/iconoServicios.png" />
+						<div class="ui-block-b service">
+							<a href="index.html">
+								<img class="serviceImage" src="img/serveis/iconoBomberos.png"/>
 							</a>
+							<a class="serviceButton" href="index.html" data-role="button">Bomberos</a>
 						</div>
 					</div>
-					<div class="ui-grid-a lineaIconos">
-						<div class="ui-block-a icono">
-							<a href="aplicaciones.html">
-								<button>Apps Barcelona</button>
-								<img class="iconoImg" src="img/funcionalidades/iconoAppsDescargas.png" />
+					<div class="ui-grid-a row">
+						<div class="ui-block-a service">
+							<a href="index.html">
+								<img class="serviceImage" src="img/serveis/iconoEmergencias.png"/>
 							</a>
+							<a class="serviceButton" href="index.html" data-role="button">Emergencias</a>
 						</div>
-						<div class="ui-block-b icono">
-							<a href="eventos.html">
-								<button>Eventos y localizaciones</button>
-								<img class="iconoImg" src="img/funcionalidades/iconoEventos.png" />
+						<div class="ui-block-b service">
+							<a href="index.html">
+								<img class="serviceImage" src="img/serveis/iconoRecogidaMuebles.png"/>
 							</a>
+							<a class="serviceButton" href="index.html" data-role="button">Recogida de muebles</a>
+						</div>
+					</div>
+					<div class="ui-grid-a row">
+						<div class="ui-block-a service">
+							<a href="index.html">
+								<img class="serviceImage" src="img/serveis/iconoBiblioteca.png"/>
+							</a>
+							<a class="serviceButton" href="index.html" data-role="button">Biblioteca</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
-				<a href="index.html" data-role="button" data-icon="back">Logout</a>
+				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
 			</div>
 		</div>
-
 		<script src="cordova.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/common.js"></script>

@@ -1,0 +1,115 @@
+.tramitesContainer{
+  width: 80vw;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.title{
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #da2429;
+  text-align: center;
+}
+
+.tramite{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  min-width: 300px;
+
+  margin: 20px 25px;
+  padding: 20px;
+
+  border-radius: 10px;
+  border: 2px solid black;
+
+  background-color: #dbdbdb;
+}
+
+.tramite p{
+  width: 65%;
+  max-width: 65%;
+
+  color: black;
+  font-weight: normal;
+  margin: 0 25px;
+}
+
+.tramiteImage{
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.linkTramite{
+  text-decoration: none;
+}
+
+.tramiteInfo{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 100%;
+}
+
+.tramiteInfo{
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.info{
+  padding-bottom: 15px;
+}
+
+.infoEstado{
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+}
+
+.infoEstado{
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.estado{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+  max-width: 72px;
+  max-height: 72px;
+
+  border: 5px white solid;
+	border-radius: 50%;
+}
+
+.estado p{
+    color: white;
+}
+
+.finalizado{
+  background-color: #9ece9a;
+}
+
+.enProceso{
+  background-color: #ff9f1c;
+}
+
+.noIniciado{
+  background-color: #e71d36;
+}
