@@ -1,4 +1,4 @@
-.serviceContainer{
+.policiaContainer{
   width: 80vw;
   margin-top: 60px;
   margin-left: auto;
@@ -18,41 +18,29 @@
   border-radius: 4px;
 }
 
-.tramites{
+.funcPolicia{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  margin-top: 20px;
+  margin: 40px 0;
 }
 
-.row{
-  width: 100%;
-  min-width: 320px;
-
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.service{
+.funcPoliciaMapa{
   display: flex;
-  text-align: center;
   align-items: center;
-  flex-direction: column;
-
-  padding: 10px;
+  justify-content: center;
+  margin: 40px 0;
 }
 
-.serviceImage{
+.policiaImage{
   max-width: 128px;
   max-height: 128px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.serviceButton{
+.policiaButton{
   margin-top: 15px;
-  max-width: 172px;
+  max-width: 250px;
 }

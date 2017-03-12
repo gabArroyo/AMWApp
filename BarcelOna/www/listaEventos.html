@@ -12,11 +12,10 @@
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
 
-		<link rel="stylesheet" href="css/aplicaciones.css"/>
-		<link rel="stylesheet" href="css/listaApps.css"/>
+		<link rel="stylesheet" href="css/listaEventos.css"/>
 		<link rel ="stylesheet" href="css/header.css"/>
 
-		<title>Avisos</title>
+		<title>Eventos deportivos</title>
 	</head>
 	<body>
 		<div data-role="page">
@@ -31,40 +30,30 @@
 			</div>
 
 			<div data-role="main" class="ui-content">
-				<div class="appsContainer">
-					<p class="title">Apps culturales</p>
+				<div class="eventoContainer">
+					<p class="title">Eventos deportivos</p>
 
-					<a href="https://play.google.com/store/apps/details?id=com.pabloserrano.barcelonatripadventure" class="linkApp"><div class="app">
-						<img class="appImage" src="img/apps/BarcelonaTripAdventureIcono.png"/>
-						<div class="appInfo">
-							<h3>Barcelona Trip Adventure</h3>
-							<p>Haz turismo por Barcelona a través de divertidas gymkanas.</p>
-						</div>
-						<div class="nota buena"><p>7,2</p></div>
-					</div></a>
-					<a href="https://play.google.com/store/apps/details?id=com.uniquevisitors.museum" class="linkApp"><div class="app">
-						<img class="appImage" src="img/apps/quescouIcono.png"/>
-						<div class="appInfo">
-							<h3>Quescou</h3>
-							<p>Descubre, crea, promueve y comparte nuevas tendencias en la ciudad.</p>
-						</div>
-						<div class="nota buena"><p>7,6</p></div>
-					</div></a>
-					<a href="https://play.google.com/store/apps/details?id=com.uniquevisitors.museum" class="linkApp"><div class="app">
-						<img class="appImage" src="img/apps/uniqueVisitorsIcono.png"/>
-						<div class="appInfo">
-							<h3>Unique Visitors</h3>
-							<p>Tu guia personal en los museos. Expermientalos como nunca antes.</p>
-						</div>
-						<div class="nota buena"><p>8</p></div>
-					</div></a>
+					<a href="eventoInfo.html" class="linkEvento">
+            <div class="evento">
+  						<img class="eventoImage" src="img/apps/BarcelonaTripAdventureIcono.png"/>
+  						<div class="eventoInfo">
+  							<h3>Cursa Plaza Cataluña</h3>
+  							<p>Cursa solidaria de 10km.<br>
+                <strong>Fecha:</strong>03/4/17<br>
+                <strong>Hora:</strong> 19:00</p>
+  						</div>
+              <div class="asisten">
+                <p>Asistentes</p>
+                <div class="asistencias"><p>10</p></div>
+              </div>
+            </div>
+          </a>
 			</div>
 
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
 				<a href="menu.html" data-role="button" data-icon="home">Menú</a>
 				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
 			</div>
-
 			<script src="cordova.js"></script>
 			<script src="js/index.js"></script>
 			<script src="js/common.js"></script>

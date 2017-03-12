@@ -12,10 +12,10 @@
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
 
-		<link rel="stylesheet" href="css/serveis.css"/>
+		<link rel="stylesheet" href="css/catalogoBiblioteca.css"/>
 		<link rel ="stylesheet" href="css/header.css"/>
 
-		<title>Menu</title>
+		<title>Catálogo Biblioteca</title>
 	</head>
 	<body>
 		<div data-role="page">
@@ -30,52 +30,51 @@
 			</div>
 
 			<div data-role="main" class="ui-content">
-				<div class="serviceContainer">
-					<p class="title">Servicios</p>
-					<div class="tramites">
-						<a rel="external" href="tramites.html">
-							<img class="serviceImage" src="img/serveis/iconoTramites.png"/>
-						</a>
-						<a rel="external" class="serviceButton" href="tramites.html" data-role="button">Trámites</a>
+				<div class="catalogoBibliotecaContainer">
+					<p class="title">Catálogo Biblioteca</p>
+
+					<div class="escogerBiblioteca">
+						<p class="title2">Seleccionar biblioteca</p>
+						<select name="select-choice-0" id="select-choice-0">
+							 <option value="central">Biblioteca Central</option>
+							 <option value="Sants">Biblioteca Sants</option>
+							 <option value="Glories">Biblioteca Glories</option>
+						</select>
 					</div>
-	        <div class="ui-grid-a row">
-						<div class="ui-block-a service">
-							<a rel="external" href="index.html">
-								<img class="serviceImage" src="img/serveis/iconoPolicia.png"/>
-							</a>
-							<a rel="external" class="serviceButton" href="policia.html" data-role="button">Policía</a>
-						</div>
-						<div class="ui-block-b service">
-							<a rel="external" href="index.html">
-								<img class="serviceImage" src="img/serveis/iconoBomberos.png"/>
-							</a>
-							<button class="serviceButton">Bomberos</button>
-						</div>
+
+					<div class="searchCatalogo">
+						<p class="title2">Buscar libro</p>
+						<input type="search" id="search" placeholder="Buscar libro" value=""/>
+						<button onclick="buscar()">Buscar</button>
 					</div>
-					<div class="ui-grid-a row">
-						<div class="ui-block-a service">
-							<a rel="external" href="index.html">
-								<img class="serviceImage" src="img/serveis/iconoEmergencias.png"/>
-							</a>
-							<a rel="external" class="serviceButton" href="emergencias.html" data-role="button">Emergencias</a>
+
+					<div class="listaLibro">
+						<p class="title2">Libros</p>
+						<div class="libroCatalogo">
+							<img class="libroCatalogoImage" src="img/serveis/iconoBiblioteca.png"/>
+							<div class="libroCatalogoInfo">
+								<h3>Título del libro</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit magna.
+									Pellentesque et pharetra tortor. Duis velit leo, vehicula et pretium condimentum,
+									facilisis id neque. Ut sem mauris.</p>
+								<a href="libroReservado.html" data-role="button" data-icon="home">Reservar</a>
+							</div>
 						</div>
-						<div class="ui-block-b service">
-							<a rel="external" href="index.html">
-								<img class="serviceImage" src="img/serveis/iconoRecogidaMuebles.png"/>
-							</a>
-							<button class="serviceButton">Recogida muebles</button>
-						</div>
-					</div>
-					<div class="ui-grid-a row">
-						<div class="ui-block-a service">
-							<a rel="external" href="index.html">
-								<img class="serviceImage" src="img/serveis/iconoBiblioteca.png"/>
-							</a>
-							<a rel="external" class="serviceButton" href="biblioteca.html" data-role="button">Biblioteca</a>
+						<div class="libroCatalogo">
+							<img class="libroCatalogoImage" src="img/serveis/iconoBiblioteca.png"/>
+							<div class="libroCatalogoInfo">
+								<h3>Título del libro</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit magna.
+									Pellentesque et pharetra tortor. Duis velit leo, vehicula et pretium condimentum,
+									facilisis id neque. Ut sem mauris.</p>
+								<button data-role="button" data-icon="info" onclick="reservarLibro(titulo)">Reservar</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
 				<a href="menu.html" data-role="button" data-icon="home">Menú</a>
 				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>

@@ -1,4 +1,4 @@
-.appsContainer{
+.eventoContainer{
   width: 90vw;
   min-width: 375px;
 
@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.app{
+.evento{
   display: flex;
   align-items: center;
   text-align: center;
@@ -36,37 +36,58 @@
   background-color: #dbdbdb;
 }
 
-.appImage{
+
+.eventoImage{
   max-width: 128px;
   max-height: 128px;
+
+  margin-right: 20px;
 }
 
-.appInfo{
+.asisten{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.asisten p{
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.asisten div{
+  margin: auto;
+}
+
+.eventoInfo{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
+  margin-right: 20px;
 }
 
-.appInfo h3{
-  color: #da2529;
+.eventoInfo h3{
+  color: #d52429;
   margin-bottom: -10px;
 }
 
-.nota{
-  width: 64px;
-  min-width: 64px;
-  height: 64px;
-  min-height: 64px;
-  margin-left: 20px;
-}
+.asistencias{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
-.linkApp{
-  text-decoration: none;
-}
+  width: 72px;
+  max-width: 72px;
+  height: 72px;
+  max-height: 72px;
 
-.linkApp:hover{
-  text-decoration: none;
+  color: white;
+  border: 5px white solid;
+  background-color: #586f7c;
+	border-radius: 50%;
 }
 
 a, a:visited, a:hover, a:active {
