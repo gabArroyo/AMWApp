@@ -1,0 +1,44 @@
+{
+	"status": 1,
+	"usuarios": [
+		{
+			"name":"Gabi",
+			"avisos": [
+				{
+					"tipo": "bombero",
+					"msg": "Ha habido un incendio en calle X y se ha bloqueado."
+				},
+				{
+					"tipo": "medico",
+					"msg": "Los resultados de tus análisis ya están listos. Pasa a recogerlos a: Hospital Sagrat Cor"
+				},
+				{
+					"tipo": "biblioteca",
+					"msg": "Quedan cuatro días para entregar El Quijote en Biblioteca Central."
+				}
+			]
+		},
+		{
+			"name":"Geovanna",
+			"avisos": [
+				{
+					"tipo": "policia",
+					"msg": "La policía encontró tu cartera. Pasa a recogerla a: BLA BLA BLA"
+				}
+			]
+		},
+		{
+			"name":"Dídac",
+			"avisos": [
+				{
+					"tipo": "biblioteca",
+					"msg": "Quedan cuatro días para entregar El Quijote en Biblioteca Central."
+				}
+			]
+		},
+		{
+			"name":"Admin",
+			"avisos": []
+		}
+	]
+}

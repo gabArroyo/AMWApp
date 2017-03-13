@@ -17,6 +17,15 @@
   text-align: center;
 }
 
+.subTitle{
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #da2429;
+  text-align: center;
+}
+
 .tramite{
   display: flex;
   align-items: center;
@@ -66,6 +75,17 @@
 .tramiteInfo{
   font-size: 18px;
   font-weight: lighter;
+}
+
+.tramitesInputContainer{
+  text-align: center;
+  width: 50%;
+    margin: auto;
+}
+
+.tramitesSubmit{
+  width: 50%;
+  margin: auto;
 }
 
 .info{

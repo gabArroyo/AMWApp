@@ -20,25 +20,25 @@
 		<div data-role="page">
 			<div class="headerInfoContainer" data-role="header">
 				<div class="avatarInfo">
-					<p>Gabriel Arroyo Hinojosa</p>
-					<button><img class="avatarFlag" src="img/cat.png"/></button>
+					<p id="name">Invitado</p>
+					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
 				</div>
-				<a href="avisos.html" class="avisos" data-role="button">0 avisos</a>
+				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
 				<button class="options">OPCIONES</button>
-				<img class="avatarImg" src="img/avatar.jpg" />
+				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg" />
 			</div>
 
 			<div data-role="main" class="ui-content">
 				<div class="ayuntamientoContainer">
 					<p class="title">Ayuntamiento</p>
 					<img class="logoAyuntamiento" src="img/logoBCN.jpg"/>
-					<a href="http://ajuntament.barcelona.cat/es/" class="linkAyuntamiento" data-role="button">Visita la web</a>
+					<a rel="external" href="http://ajuntament.barcelona.cat/es/" class="linkAyuntamiento" data-role="button">Visita la web</a>
 
 					<div class="ayuntamientoNoticias">
 						<p class="title">Noticias</p>
 						<div class="ui-grid-a lineaNoticia">
 							<div class="ui-block-a noticia">
-								<a href="http://eldigital.barcelona.cat/es/seguiremos-defendiendo-los-derechos-energeticos-en-el-contrato-de-suministro-electrico_479043.html">
+								<a rel="external" href="http://eldigital.barcelona.cat/es/seguiremos-defendiendo-los-derechos-energeticos-en-el-contrato-de-suministro-electrico_479043.html">
 									<img class="iconoImg" src="http://media-edg.barcelona.cat/wp-content/uploads/2017/03/10152355/IMG_3114-1024x768.jpg?v=1489156143" />
 									<p class="titleNew">Seguiremos defendiendo los derechos energéticos
 										 en el contrato de suministro eléctrico</p>
@@ -49,7 +49,7 @@
 								</a>
 							</div>
 							<div class="ui-block-b noticia">
-								<a href="http://eldigital.barcelona.cat/es/el-servicio-de-teleasistencia-sera-mas-personalizado-y-tendra-mejores-prestaciones_479140.html">
+								<a rel="external" href="http://eldigital.barcelona.cat/es/el-servicio-de-teleasistencia-sera-mas-personalizado-y-tendra-mejores-prestaciones_479140.html">
 									<img class="iconoImg" src="http://media-edg.barcelona.cat/wp-content/uploads/2017/03/10155443/8-1024x683.jpg?v=1489157752" />
 									<p class="titleNew">El servicio de teleasistencia será más personalizado y tendrá mejores prestaciones</p>
 									<p>
@@ -66,7 +66,7 @@
 						<p class="title">Artículos</p>
 						<div class="ui-grid-a lineaArticulo">
 							<div class="ui-block-a articulo">
-								<a href="http://eldigital.barcelona.cat/es/seguiremos-defendiendo-los-derechos-energeticos-en-el-contrato-de-suministro-electrico_479043.html">
+								<a rel="external" href="http://eldigital.barcelona.cat/es/seguiremos-defendiendo-los-derechos-energeticos-en-el-contrato-de-suministro-electrico_479043.html">
 									<img class="iconoImg" src="http://ajuntament.barcelona.cat/alcaldessa/sites/default/files/habitatge3-1024x719.jpg" />
 									<p class="titleArticle">Menos deshaucios</p>
 									<p>
@@ -76,7 +76,7 @@
 								</a>
 							</div>
 							<div class="ui-block-b articulo">
-								<a href="http://eldigital.barcelona.cat/es/el-servicio-de-teleasistencia-sera-mas-personalizado-y-tendra-mejores-prestaciones_479140.html">
+								<a rel="external" href="http://eldigital.barcelona.cat/es/el-servicio-de-teleasistencia-sera-mas-personalizado-y-tendra-mejores-prestaciones_479140.html">
 									<img class="iconoImg" src="http://ajuntament.barcelona.cat/alcaldessa/sites/default/files/keys-1966556_1920_0.jpg" />
 									<p class="titleArticle">La Generalitat abre la puerta a regular los precios de alquiler</p>
 									<p>
@@ -92,7 +92,7 @@
 			</div>
 
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
-				<a href="menu.html" data-role="button" data-icon="home">Menú</a>
+				<a rel="external" href="menu.html" data-role="button" data-icon="home">Menú</a>
 				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
 			</div>
 			<script src="cordova.js"></script>
@@ -100,6 +100,7 @@
 			<script src="js/common.js"></script>
 			<script src="js/jquery-2.1.1.min.js"></script>
 			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
+			<script src="js/header.js"></script>
 		</div>
 	</body>
 

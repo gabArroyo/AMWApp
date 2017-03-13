@@ -11,43 +11,7 @@
 		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-
-		<!-- CSS BUENO
 		<link rel ="stylesheet" href="css/header.css"/>
-		<link rel="stylesheet" href="css/menu.css"/>-->
-
-		<!-- CSS extra para poder verlo todo bien -->
-
-		<link rel="stylesheet" href="css/register.css"/>
-		<link rel="stylesheet" href="css/login.css"/>
-
-		<link rel="stylesheet" href="css/aplicaciones.css"/>
-		<link rel="stylesheet" href="css/slideshow.css"/>
-		<link rel="stylesheet" href="css/listaApps.css"/>
-		<link rel="stylesheet" href="css/reserva.css"/>
-
-		<link rel="stylesheet" href="css/avisos.css"/>
-
-		<link rel="stylesheet" href="css/ayuntamiento.css"/>
-
-		<link rel="stylesheet" href="css/biblioteca.css"/>
-		<link rel="stylesheet" href="css/catalogoBiblioteca.css"/>
-		<link rel="stylesheet" href="css/reserva.css"/>
-
-		<link rel="stylesheet" href="css/eventos.css"/>
-		<link rel="stylesheet" href="css/listaEventos.css"/>
-		<link rel="stylesheet" href="css/eventoInfo.css"/>
-		<link rel="stylesheet" href="css/slideshowAsistente.css"/>
-
-		<link rel="stylesheet" href="css/home.css"/>
-		<link rel="stylesheet" href="css/app.css"/>
-
-		<link rel="stylesheet" href="css/serveis.css"/>
-		<link rel="stylesheet" href="css/policia.css"/>
-		<link rel="stylesheet" href="css/emergencias.css"/>
-		<link rel="stylesheet" href="css/tramites.css"/>
-
-		<link rel="stylesheet" href="css/header.css"/>
 		<link rel="stylesheet" href="css/menu.css"/>
 
 		<title>Menu</title>
@@ -56,12 +20,12 @@
 		<div class="page">
 			<div class="headerInfoContainer" data-role="header">
 				<div class="avatarInfo">
-					<p>Gabriel Arroyo Hinojosa</p>
-					<button><img class="avatarFlag" src="img/cat.png"/></button>
+					<p id="name">Invitado</p>
+					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
 				</div>
-				<a href="avisos.html" class="avisos" data-role="button">0 avisos</a>
+				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
 				<button class="options">OPCIONES</button>
-				<img class="avatarImg" src="img/avatar.jpg" />
+				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg"/>
 			</div>
 
 			<div data-role="main" class="ui-content">
@@ -98,13 +62,16 @@
 				</div>
 			</div>
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
-				<a href="index.html" data-role="button" data-icon="back">Logout</a>
+				<a rel="external" href="index.html" data-role="button" data-icon="back">Logout</a>
 			</div>
+
 			<script src="cordova.js"></script>
 			<script src="js/index.js"></script>
 			<script src="js/common.js"></script>
 			<script src="js/jquery-2.1.1.min.js"></script>
 			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
+			<script src="js/serverStub.js"></script>
+			<script src="js/header.js"></script>
 		</div>
 	</body>
 

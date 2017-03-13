@@ -22,19 +22,19 @@
 		<div data-role="page">
 			<div class="headerInfoContainer" data-role="header">
 				<div class="avatarInfo">
-					<p>Gabriel Arroyo Hinojosa</p>
-					<button><img class="avatarFlag" src="img/cat.png"/></button>
+					<p id="name">Invitado</p>
+					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
 				</div>
-				<a href="avisos.html" class="avisos" data-role="button">0 avisos</a>
+				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
 				<button class="options">OPCIONES</button>
-				<img class="avatarImg" src="img/avatar.jpg" />
+				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg" />
 			</div>
 
 			<div data-role="main" class="ui-content">
 				<div class="appsContainer">
 					<p class="title">Apps culturales</p>
 
-					<a href="https://play.google.com/store/apps/details?id=com.pabloserrano.barcelonatripadventure" class="linkApp"><div class="app">
+					<a rel="external" href="https://play.google.com/store/apps/details?id=com.pabloserrano.barcelonatripadventure" class="linkApp"><div class="app">
 						<img class="appImage" src="img/apps/BarcelonaTripAdventureIcono.png"/>
 						<div class="appInfo">
 							<h3>Barcelona Trip Adventure</h3>
@@ -42,7 +42,7 @@
 						</div>
 						<div class="nota buena"><p>7,2</p></div>
 					</div></a>
-					<a href="https://play.google.com/store/apps/details?id=com.uniquevisitors.museum" class="linkApp"><div class="app">
+					<a rel="external" href="https://play.google.com/store/apps/details?id=com.uniquevisitors.museum" class="linkApp"><div class="app">
 						<img class="appImage" src="img/apps/quescouIcono.png"/>
 						<div class="appInfo">
 							<h3>Quescou</h3>
@@ -50,7 +50,7 @@
 						</div>
 						<div class="nota buena"><p>7,6</p></div>
 					</div></a>
-					<a href="https://play.google.com/store/apps/details?id=com.uniquevisitors.museum" class="linkApp"><div class="app">
+					<a rel="external" href="https://play.google.com/store/apps/details?id=com.uniquevisitors.museum" class="linkApp"><div class="app">
 						<img class="appImage" src="img/apps/uniqueVisitorsIcono.png"/>
 						<div class="appInfo">
 							<h3>Unique Visitors</h3>
@@ -61,7 +61,7 @@
 			</div>
 
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
-				<a href="menu.html" data-role="button" data-icon="home">Menú</a>
+				<a rel="external" href="menu.html" data-role="button" data-icon="home">Menú</a>
 				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
 			</div>
 
@@ -70,6 +70,7 @@
 			<script src="js/common.js"></script>
 			<script src="js/jquery-2.1.1.min.js"></script>
 			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
+			<script src="js/header.js"></script>
 		</div>
 	</body>
 

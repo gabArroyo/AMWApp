@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<link rel ="stylesheet" href="css/header.css"/>
 		<link rel="stylesheet" href="css/register.css"/>
 		<title>Registro</title>
 	</head>
@@ -28,15 +29,15 @@
 				<div class="registerForm">
 					<form>
 						<div class="registerInputContainer">
-							<input class="registerInput" type="text" id="user" maxlength="2" placeholder="Nombre de usuario"/>
+							<input class="registerInput" type="text" id="user" maxlength="20" placeholder="Nombre de usuario"/>
 						</div>
 
 						<div class="registerInputContainer">
-							<input class="registerInput" type="password" id="pass" maxlength="32" placeholder="Contraseña"/>
+							<input class="registerInput" type="password" id="pass" maxlength="14" placeholder="Contraseña"/>
 						</div>
 
             <div class="registerInputContainer">
-              <input class="registerInput" type="password" id="repeatPass" maxlength="32" placeholder="Repetir contraseña"/>
+              <input class="registerInput" type="password" id="repeatPass" maxlength="14" placeholder="Repetir contraseña"/>
             </div>
 
             <div class="registerInputContainer">
@@ -44,20 +45,22 @@
             </div>
 
 						<div class="registerSubmit">
-							<a id="buttonLink" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left" onclick="doLogin()">Submit</a>
+							<a rel="external" id="buttonLink" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left" onclick="doRegister()">Submit</a>
 						</div>
 					</form>
 				</div>
 			</div>
 
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
-				<a href="index.html" data-role="button" data-icon="back">Logout</a>
+				<a rel="external" href="index.html" data-role="button" data-icon="back">Logout</a>
 			</div>
 			<script src="cordova.js"></script>
 			<script src="js/index.js"></script>
 			<script src="js/common.js"></script>
 			<script src="js/jquery-2.1.1.min.js"></script>
 			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
+			<script src="js/serverStub.js"></script>
+			<script src="js/Register.js"></script>
 		</div>
 	</body>
 

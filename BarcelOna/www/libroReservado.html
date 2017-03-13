@@ -15,18 +15,18 @@
 		<link rel="stylesheet" href="css/reserva.css"/>
 		<link rel ="stylesheet" href="css/header.css"/>
 
-		<title>reserva</title>
+		<title>Reserva</title>
 	</head>
 	<body>
 		<div data-role="page">
 			<div class="headerInfoContainer" data-role="header">
 				<div class="avatarInfo">
-					<p>Gabriel Arroyo Hinojosa</p>
-					<button><img class="avatarFlag" src="img/cat.png"/></button>
+					<p id="name">Invitado</p>
+					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
 				</div>
-				<a href="avisos.html" class="avisos" data-role="button">0 avisos</a>
+				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
 				<button class="options">OPCIONES</button>
-				<img class="avatarImg" src="img/avatar.jpg" />
+				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg" />
 			</div>
 
 			<div data-role="main" class="ui-content">
@@ -41,7 +41,7 @@
 			</div>
 
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
-				<a href="menu.html" data-role="button" data-icon="home">Menú</a>
+				<a rel="external" href="menu.html" data-role="button" data-icon="home">Menú</a>
 				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
 			</div>
 			<script src="cordova.js"></script>
@@ -49,6 +49,7 @@
 			<script src="js/common.js"></script>
 			<script src="js/jquery-2.1.1.min.js"></script>
 			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
+			<script src="js/header.js"></script>
 		</div>
 	</body>
 </html>
