@@ -98,3 +98,9 @@
   margin-right: 10px;
   margin-left: 10px;
 }
+
+.mensajeLibros{
+  display: block;
+  text-align: center;
+  margin: auto;
+}

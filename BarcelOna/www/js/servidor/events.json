@@ -1,0 +1,30 @@
+{
+	"status": 1,
+	"eventos": [
+		{
+			"id":"1",
+      "eventoName": "Cursa Plaza Cataluña",
+      "shortDesc" : "Cursa solidaria de 10km.",
+			"longDesc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut urna tincidunt, efficitur elit at, imperdiet augue. Morbi at rhoncus erat. Pellentesque lectus turpis, pretium sed dui fermentum, dapibus facilisis est.",
+      "urlImg": "img\/eventos\/cursa.png",
+			"fecha": "03/4/17",
+			"hora": "17:00",
+      "asistencias": [
+				"Dídac"
+			]
+		},
+		{
+			"id":"2",
+      "eventoName": "Triatlón",
+      "shortDesc" : "Triatlón alrededor de Barcelona.",
+			"longDesc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut urna tincidunt, efficitur elit at, imperdiet augue. Morbi at rhoncus erat. Pellentesque lectus turpis, pretium sed dui fermentum, dapibus facilisis est.",
+      "urlImg": "img\/eventos\/triatlon.png",
+			"fecha": "20/4/17",
+			"hora": "10:00",
+      "asistencias": [
+				"Geovanna",
+				"Dídac"
+			]
+		}
+	]
+}

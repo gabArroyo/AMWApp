@@ -73,6 +73,14 @@
   margin-bottom: -10px;
 }
 
+.eventoInfo p{
+  color: black;
+}
+
+.buttonEvent{
+  width: 50%;
+}
+
 .asistencias{
   display: flex;
   text-align: center;
@@ -92,5 +100,4 @@
 
 a, a:visited, a:hover, a:active {
   text-decoration: none !important;
-  color: black !important;
 }

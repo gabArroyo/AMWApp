@@ -1,8 +1,4 @@
 var slideIndex = 1;
-var slideIndexMasRecomendadas = 1;
-
-showSlides(slideIndex);
-showSlidesMasRecomendadas(slideIndexMasRecomendadas);
 
 /* Slider del ayuntamiento */
 

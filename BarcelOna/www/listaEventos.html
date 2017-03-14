@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
 
+		<link rel="stylesheet" href="css/eventoInfo.css"/>
+    <link rel="stylesheet" href="css/slideshowAsistente.css"/>
 		<link rel="stylesheet" href="css/listaEventos.css"/>
 		<link rel ="stylesheet" href="css/header.css"/>
 
@@ -30,24 +32,23 @@
 			</div>
 
 			<div data-role="main" class="ui-content">
-				<div class="eventoContainer">
+				<div id="eventoContainer" class="eventoContainer">
 					<p class="title">Eventos deportivos</p>
 
-					<a rel="external" href="eventoInfo.html" class="linkEvento">
             <div class="evento">
-  						<img class="eventoImage" src="img/apps/BarcelonaTripAdventureIcono.png"/>
-  						<div class="eventoInfo">
-  							<h3>Cursa Plaza Cataluña</h3>
-  							<p>Cursa solidaria de 10km.<br>
-                <strong>Fecha:</strong>03/4/17<br>
-                <strong>Hora:</strong> 19:00</p>
-  						</div>
-              <div class="asisten">
-                <p>Asistentes</p>
-                <div class="asistencias"><p>10</p></div>
-              </div>
-            </div>
-          </a>
+							<img class="eventoImage" src="img/apps/BarcelonaTripAdventureIcono.png"/>
+							<div class="eventoInfo">
+								<h3>Cursa Plaza Cataluña</h3>
+								<p>Cursa solidaria de 10km.<br>
+								<strong>Fecha:</strong>03/4/17<br>
+								<strong>Hora:</strong> 19:00</p>
+								<button onclick="show()">Ver</button>
+							</div>
+							<div class="asisten">
+								<p>Asistentes</p>
+								<div class="asistencias"><p>10</p></div>
+							</div>
+						</div>
 			</div>
 
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
@@ -60,6 +61,8 @@
 			<script src="js/jquery-2.1.1.min.js"></script>
 			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
 			<script src="js/header.js"></script>
+			<script src="js/slideshowAsistentes.js"></script>
+			<script src="js/eventos.js"></script>
 		</div>
 	</body>
 

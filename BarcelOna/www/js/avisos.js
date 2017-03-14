@@ -1,5 +1,7 @@
 loadAvisos();
 
+
+// Cargamos los avisos del usuario.
 function loadAvisos(){
   var user = JSON.parse(localStorage.userInfo);
   var htmlToWrite = ""
@@ -22,6 +24,7 @@ function loadAvisos(){
   div.innerHTML = div.innerHTML + htmlToWrite;
 }
 
+// Escogemos que tipo de aviso es.
 function chooseAdvice(tipo, adviseInfo){
   if (tipo == "policia"){
     adviseInfo.url = "policia.html";

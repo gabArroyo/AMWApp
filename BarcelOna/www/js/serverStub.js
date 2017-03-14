@@ -47,7 +47,7 @@ function getUsersAvisos(){
     success: function(data){
       var status = data.status;
       localStorage.listAdvises = JSON.stringify(data.usuarios);
-      localStorage.advisesLoaded = true;
+      localStorage.advisesLoaded = "true";
     },
     failure: function(errMsg){
       alert("Error durante la comunicación con los avisos de usuarios.");
@@ -82,7 +82,7 @@ function getUsersTramites(){
     success: function(data){
       var status = data.status;
       localStorage.listTramites = JSON.stringify(data.usuarios);
-      localStorage.tramitesLoaded = true;
+      localStorage.tramitesLoaded = "true";
     },
     failure: function(errMsg){
       alert("Error durante la comunicación con los avisos de usuarios.");
@@ -105,26 +105,6 @@ function webServiceGetUserTramites(userNameInput){
 	return false;
 }
 
-/* Server stub que simula un webservice real */
-// Obtenemos todos los usuarios del servidor.
-function getAppsServer(){
-	$.ajax({
-    type: "GET",
-    url: "https://api.myjson.com/bins/xft7r",
-    contentType: "application/x-www-form-urlencoded; charset=utf-8",
-    async: false,
-    dataType: "json",
-    success: function(data){
-      var status = data.status;
-      localStorage.listUsers = JSON.stringify(data.usuarios);
-      localStorage.usersLoaded = true;
-    },
-    failure: function(errMsg){
-      alert("Error durante la comunicación con la base de usuarios.");
-    }
-  });
-}
-
 function getUsersBooks(){
 	$.ajax({
     type: "GET",
@@ -135,7 +115,7 @@ function getUsersBooks(){
     success: function(data){
       var status = data.status;
       localStorage.listBooks = JSON.stringify(data.usuarios);
-      localStorage.booksLoaded = true;
+      localStorage.booksLoaded = "true";
     },
     failure: function(errMsg){
       alert("Error durante la comunicación con la base de usuarios.");
@@ -157,3 +137,23 @@ function webServiceGetUserBooks(userNameInput){
 	}
 	return false;
 }
+
+/* Server stub que simula un webservice real
+// Obtenemos todos los usuarios del servidor.
+function getAppsServer(){
+	$.ajax({
+    type: "GET",
+    url: "https://api.myjson.com/bins/xft7r",
+    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+    async: false,
+    dataType: "json",
+    success: function(data){
+      var status = data.status;
+      localStorage.listUsers = JSON.stringify(data.usuarios);
+      localStorage.usersLoaded = "true";
+    },
+    failure: function(errMsg){
+      alert("Error durante la comunicación con la base de usuarios.");
+    }
+  });
+}*/

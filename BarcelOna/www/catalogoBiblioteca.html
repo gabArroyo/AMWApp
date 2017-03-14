@@ -35,7 +35,7 @@
 
 					<div class="escogerBiblioteca">
 						<p class="title2">Seleccionar biblioteca</p>
-						<select name="select-choice-0" id="selectBiblioteca">
+						<select onclick="checkValue()" name="select-choice-0" id="selectBiblioteca">
 							 <option value="central">Biblioteca Central</option>
 							 <option value="Sants">Biblioteca Sants</option>
 							 <option value="Glories">Biblioteca Glories</option>
@@ -48,7 +48,7 @@
 						<button onclick="buscar()">Buscar</button>
 					</div>
 
-					<div class="listaLibro">
+					<div id="librosContainer" class="listaLibro">
 						<p class="title2">Libros</p>
 						<div class="libroCatalogo">
 							<img class="libroCatalogoImage" src="img/serveis/iconoBiblioteca.png"/>
@@ -57,7 +57,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit magna.
 									Pellentesque et pharetra tortor. Duis velit leo, vehicula et pretium condimentum,
 									facilisis id neque. Ut sem mauris.</p>
-								<a rel="external" href="libroReservado.html" data-role="button" data-icon="home">Reservar</a>
+								<button data-role="button" data-icon="info" onclick="reservar(4444)">Reservar</button>
 							</div>
 						</div>
 						<div class="libroCatalogo">
@@ -67,17 +67,16 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit magna.
 									Pellentesque et pharetra tortor. Duis velit leo, vehicula et pretium condimentum,
 									facilisis id neque. Ut sem mauris.</p>
-								<button data-role="button" data-icon="info" onclick="reservarLibro(titulo)">Reservar</a>
+								<button data-role="button" data-icon="info" onclick="reservar(3333)">Reservar</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
 				<a rel="external" href="menu.html" data-role="button" data-icon="home">Menú</a>
-				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
+				<a rel="external" href="biblioteca.html" data-role="button" data-icon="arrow-l">Ir a Biblioteca</a>
 			</div>
 			<script src="cordova.js"></script>
 			<script src="js/index.js"></script>
@@ -88,5 +87,4 @@
 			<script src="js/biblioteca.js"></script>
 		</div>
 	</body>
-
 </html>

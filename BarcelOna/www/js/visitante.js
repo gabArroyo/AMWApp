@@ -1,3 +1,4 @@
+// Simula la entrada como visitante.
 function entrarVisitante(){
 	var userInfo = {
 		name: "Visitante",

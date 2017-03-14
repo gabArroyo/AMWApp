@@ -1,5 +1,9 @@
 loadTramites();
 
+// Una función que simularía el código que se usaría para un trámite.
+// La cuenta del usuario quedaría vinculada con la id del trámite.
+// Posteriormente cuanto llegase el trámite a la administración pública se
+//  mostraría la información en avisos.
 function tramiteStub(){
   var id = document.getElementById('tramite').value;
   if (id == "")
@@ -14,6 +18,7 @@ function tramiteStub(){
   }
 }
 
+// Carga los trámites del usuario.
 function loadTramites(){
   var user = JSON.parse(localStorage.userInfo);
   var htmlToWrite = ""
@@ -40,6 +45,7 @@ function loadTramites(){
   div.innerHTML = div.innerHTML + htmlToWrite;
 }
 
+// Devuelve el icono dependiendo del tipo de trámite.
 function chooseTramite(tipo, tramiteInfo){
   if (tipo == "administracion"){
     return "img/serveis/iconoTramites.png";
@@ -49,6 +55,7 @@ function chooseTramite(tipo, tramiteInfo){
   }
 }
 
+// Elige el css para el tramite.
 function getStateTramite(value){
   if (value == 100)
     return "estado finalizado";

@@ -1,5 +1,7 @@
 loadTusLibros();
 
+
+// Mostramos nuestros libros.
 function loadTusLibros(){
   var user = JSON.parse(localStorage.userInfo);
   var htmlToWrite = ""

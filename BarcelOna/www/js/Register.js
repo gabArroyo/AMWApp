@@ -1,5 +1,6 @@
+// Realizamos un registro.
 function doRegister(){
-	if (localStorage.usersLoaded == false)
+	if (localStorage.usersLoaded == "false")
 		alert("Error en la carga de usuarios.")
 
 	var userNameInput = document.getElementById('user').value;
@@ -10,7 +11,7 @@ function doRegister(){
 	if (passInput != repeatPass)
 		alert("La contraseña insertada no coincide con la repetida.");
 	else if(email.includes("@") == false)
-		alert("El email introducido no es correcta, falta el dominio.");
+		alert("El email introducido no es correcto, falta el dominio.");
 	else{
 		var userFound = webServiceCheckIfUserExists(userNameInput, passInput);
 		if (userFound){

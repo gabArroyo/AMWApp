@@ -1,3 +1,4 @@
+// Llamada a número de teléfono.
 function phoneCall(number){
   window.plugins.CallNumber.callNumber(onSuccess, onError, number, true);
 }

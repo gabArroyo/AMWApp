@@ -53,6 +53,10 @@
   margin-bottom: -10px;
 }
 
+.appInfo p{
+  color: black;
+}
+
 .nota{
   width: 64px;
   min-width: 64px;
@@ -71,5 +75,4 @@
 
 a, a:visited, a:hover, a:active {
   text-decoration: none !important;
-  color: black !important;
 }

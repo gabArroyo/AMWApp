@@ -1,5 +1,6 @@
+// Realizamos el login.
 function doLogin(){
-	if (localStorage.usersLoaded == false)
+	if (localStorage.usersLoaded == "false")
 		alert("Error en la carga de usuarios.")
 
 	var userNameInput = document.getElementById('user').value;

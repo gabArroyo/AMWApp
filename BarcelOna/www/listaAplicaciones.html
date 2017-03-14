@@ -12,11 +12,11 @@
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
 
+		<link rel ="stylesheet" href="css/header.css"/>
 		<link rel="stylesheet" href="css/aplicaciones.css"/>
 		<link rel="stylesheet" href="css/listaApps.css"/>
-		<link rel ="stylesheet" href="css/header.css"/>
 
-		<title>Avisos</title>
+		<title>Aplicaciones</title>
 	</head>
 	<body>
 		<div data-role="page">
@@ -31,9 +31,8 @@
 			</div>
 
 			<div data-role="main" class="ui-content">
-				<div class="appsContainer">
+				<div id="appsContainer" class="appsContainer">
 					<p class="title">Apps culturales</p>
-
 					<a rel="external" href="https://play.google.com/store/apps/details?id=com.pabloserrano.barcelonatripadventure" class="linkApp"><div class="app">
 						<img class="appImage" src="img/apps/BarcelonaTripAdventureIcono.png"/>
 						<div class="appInfo">
@@ -42,7 +41,7 @@
 						</div>
 						<div class="nota buena"><p>7,2</p></div>
 					</div></a>
-					<a rel="external" href="https://play.google.com/store/apps/details?id=com.uniquevisitors.museum" class="linkApp"><div class="app">
+					<a rel="external" href="https://play.google.com/store/apps/details?id=com.luxa.quescou&hl=es_419" class="linkApp"><div class="app">
 						<img class="appImage" src="img/apps/quescouIcono.png"/>
 						<div class="appInfo">
 							<h3>Quescou</h3>
@@ -54,7 +53,7 @@
 						<img class="appImage" src="img/apps/uniqueVisitorsIcono.png"/>
 						<div class="appInfo">
 							<h3>Unique Visitors</h3>
-							<p>Tu guia personal en los museos. Expermientalos como nunca antes.</p>
+							<p>Tu guia personal en los museos. Experimentalos como nunca antes.</p>
 						</div>
 						<div class="nota buena"><p>8</p></div>
 					</div></a>
@@ -62,7 +61,7 @@
 
 			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
 				<a rel="external" href="menu.html" data-role="button" data-icon="home">Menú</a>
-				<button onclick="goBack()" data-icon="arrow-l">Atrás</button>
+				<a rel="external" href="aplicaciones.html" data-role="button" data-icon="arrow-l">Menú</a>
 			</div>
 
 			<script src="cordova.js"></script>
@@ -71,7 +70,7 @@
 			<script src="js/jquery-2.1.1.min.js"></script>
 			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
 			<script src="js/header.js"></script>
+			<script src="js/aplicaciones.js"></script>
 		</div>
 	</body>
-
 </html>
