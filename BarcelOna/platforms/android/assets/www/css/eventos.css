@@ -1,0 +1,57 @@
+.eventosContainer{
+  width: 90vw;
+  min-width: 325px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.title{
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #da2429;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.mapContainer{
+  
+}
+
+.tiposEventos{
+  padding-bottom: 20px;
+}
+
+.tiposEventosContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoriaEvento{
+  display: flex;
+  text-align: center;
+  width: 75%;
+}
+
+.eventoContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5%;
+  padding: 15px;
+}
+
+.eventoImage{
+  width: 128px;
+  height: 128px;
+  max-width: 25vw;
+	border-radius: 15%;
+}

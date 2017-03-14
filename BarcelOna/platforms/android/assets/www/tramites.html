@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' gap://ready file://* *;
+			img-src * 'self' data:; style-src * 'self' 'unsafe-inline'; script-src * 'self' 'unsafe-inline' 'unsafe-eval';"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="msapplication-tap-highlight" content="no"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+
+		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
+
+		<link rel ="stylesheet" href="css/header.css"/>
+		<link rel="stylesheet" href="css/tramites.css"/>
+		<link rel="stylesheet" href="css/tramiteEnviado.css"/>
+
+		<title>Trámites</title>
+	</head>
+	<body>
+		<div data-role="page">
+			<div class="headerInfoContainer" data-role="header">
+				<div class="avatarInfo">
+					<p id="name">Invitado</p>
+					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
+				</div>
+				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
+				<button class="options">OPCIONES</button>
+				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg" />
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div class="tramitesContainer">
+					<p class="title">Tramites</p>
+					<div id="tramitesContainer"></div>
+
+					<p class="subTitle">Añadir trámite</p>
+					<div class="tramitesInputContainer">
+						<input type="text" id="tramite" maxlength="20" placeholder="Introduce ID del trámite."/>
+						<button class="tramitesSubmit" onclick="tramiteStub()" data-icon="check">Añadir</button>
+					</div>
+				</div>
+			</div>
+
+			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
+				<a rel="external" href="menu.html" data-role="button" data-icon="home">Menú</a>
+				<a rel="external" href="servicios.html" data-role="button" data-icon="back">Atrás</a>
+			</div>
+
+			<script src="cordova.js"></script>
+			<script src="js/index.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/jquery-2.1.1.min.js"></script>
+			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
+			<script src="js/header.js"></script>
+			<script src="js/tramites.js"></script>
+		</div>
+	</body>
+</html>
+
+
+<!--
+
+<div class="tramite">
+	<img class="tramiteImage" src="img/serveis/iconoTramites.png"/>
+	<div class="tramiteInfo">
+		<h4>Tu trámite con la administración está en proceso.</h4>
+		<p class="info"><strong>Número del trámite:</strong> AH27462726.</br>
+			<strong>Fecha Estimada:</strong> 27/03/17.</br>
+			<strong>Recogelo en:</strong> BLA BLA</p>
+		<div class="infoEstado">
+			<p><strong>Estado: </strong></p>
+			<div class="estado enProceso"><p>67%</p></div>
+		</div>
+	</div>
+</div>
+
+-->

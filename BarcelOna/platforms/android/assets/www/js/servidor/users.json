@@ -1,0 +1,29 @@
+{
+	"status": 1,
+	"usuarios": [
+		{
+			"name":"Gabi",
+			"pass":"pass1",
+			"email":"emailPrueba@gmail.com",
+			"imgAvatar": "img\/avatar\/pepeFrog.png"
+		},
+		{
+			"name":"Geovanna",
+			"pass":"pass2",
+			"email":"emailPrueba2@gmail.com",
+			"imgAvatar": "img\/avatar\/cuddles.png"
+		},
+		{
+			"name":"Dídac",
+			"pass":"pass3",
+			"email":"emailPrueba3@gmail.com",
+			"imgAvatar": "img\/avatar\/mole.png"
+		},
+		{
+			"name":"Admin",
+			"pass":"admin",
+			"email":"admin@gmail.com",
+			"imgAvatar": "img\/avatar\/handy.png"
+		}
+	]
+}

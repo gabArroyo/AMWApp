@@ -1,0 +1,38 @@
+{
+	"status": 1,
+	"usuarios": [
+		{
+			"name":"Gabi",
+			"tramites": [
+				{
+					"tipo": "administracion",
+					"msg": "Tu trámite con la administración está en proceso.",
+					"id": "AH27462726",
+					"date": "27/03/17",
+					"place": "Ayuntamiento Barcelona",
+					"state": "67"
+				},
+				{
+					"tipo": "emergencias",
+					"msg": "El análisis ya está terminado.",
+					"id": "AH27462727",
+					"date": "Hoy",
+					"place": "Hospital Sagrat Cor",
+					"state": "100"
+				}
+			]
+		},
+		{
+			"name":"Geovanna",
+			"tramites": []
+		},
+		{
+			"name":"Dídac",
+			"tramites": []
+		},
+		{
+			"name":"Admin",
+			"tramites": []
+		}
+	]
+}

@@ -1,10 +1,11 @@
 html,
 body
 #login{
-  height: 91%;
+  height: 89%;
   margin: 0;
   padding: 0;
 }
+
 
 .ui-content {
   height: inherit;
@@ -25,16 +26,6 @@ body
   max-height: 200px;
 }
 
-.entrada {
-  margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 40%;
-  height: 35%;
-  max-width: 350px;
-  max-height: 250 px;
-}
-
 .entradaContainer{
   width: 90%;
   margin: 0 auto;
@@ -44,8 +35,21 @@ body
   padding-bottom: 30px;
 }
 
+.entrada {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10%;
+  max-width: 350px;
+  max-height: 250px;
+}
+
 .entradaOption{
   padding-top: 10px;
   margin: 0 auto;
   width: 75%;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none !important;
+  color: white !important;
 }

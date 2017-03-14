@@ -1,0 +1,26 @@
+{
+	"status": 1,
+	"apps": [
+		{
+      "appName": "Barcelona Trip Adventure",
+      "desc" : "Haz turismo por Barcelona a través de divertidas gymkanas.",
+      "urlApp": "https://play.google.com/store/apps/details?id=com.pabloserrano.barcelonatripadventure",
+      "urlImg": "img\/apps\/BarcelonaTripAdventureIcono.png",
+      "nota": "7.2"
+		},
+    {
+      "appName": "Quescou",
+      "desc" : "Descubre, crea, promueve y comparte nuevas tendencias en la ciudad.",
+      "urlApp": "https://play.google.com/store/apps/details?id=com.luxa.quescou&hl=es_419",
+      "urlImg": "img\/apps\/quescouIcono.png",
+      "nota": "7.6"
+    },
+    {
+      "appName": "Unique Visitors",
+      "desc" : "Tu guia personal en los museos. Expermientalos como nunca antes.",
+      "urlApp": "https://play.google.com/store/apps/details?id=com.uniquevisitors.museum",
+      "urlImg": "img\/apps\/uniqueVisitorsIcono.png",
+      "nota": "8"
+    }
+	]
+}

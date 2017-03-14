@@ -7,68 +7,71 @@
 		<meta name="msapplication-tap-highlight" content="no"/>
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
 
-
 		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-		<link rel="stylesheet" href="css/app.css"/>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+		<link rel ="stylesheet" href="css/header.css"/>
+		<link rel="stylesheet" href="css/menu.css"/>
+
 		<title>Menu</title>
 	</head>
 	<body>
-		<div data-role="page" id="login" style="background-image: url('img/Fondo.png');
-																						background-attachment: fixed;
-																						background-repeat: no-repeat;
-																						background-size: 100% 100%;">
-
-			<div class="headerInfoContainer" data-role="header" >
-				<div class="ui-grid-b avatarInfoContainer">
-			    <div class="ui-block-a avatarInfo">
-							<p>Gabriel Arroyo Hinojosa</p>
-					</div>
-					<div class="ui-block-b">
-						<button><img class="avatarFlag" src="img/cat.png" /></button>
-					</div>
-					<button class="options">OPCIONES</button>
+		<div class="page">
+			<div class="headerInfoContainer" data-role="header">
+				<div class="avatarInfo">
+					<p id="name">Invitado</p>
+					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
 				</div>
-				<img class="avatarImg" src="img/avatar.jpg" />
+				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
+				<button class="options">OPCIONES</button>
+				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg"/>
 			</div>
-
 
 			<div data-role="main" class="ui-content">
-				<div class="container">
-					<div class="ui-grid-a lineaIconos" style="background-color: blue;">
+				<div class="functionsContainer">
+					<p class="title">Menu</p>
+					<div class="ui-grid-a lineaIconos">
 						<div class="ui-block-a icono">
-							<a href="" ><img src="img/avatar.jpg" /></a>
+							<a rel="external" href="ayuntamiento.html">
+								<button>Ayuntamiento</button>
+								<img class="iconoImg" src="img/funcionalidades/iconoAyuntamiento.png" />
+							</a>
 						</div>
 						<div class="ui-block-b icono">
-							<a href="" ><img src="img/avatar.jpg" /></a>
+							<a rel="external" href="servicios.html">
+								<button>Servicios de la ciudad</button>
+								<img class="iconoImg" src="img/funcionalidades/iconoServicios.png" />
+							</a>
 						</div>
 					</div>
-					<div class="ui-grid-a lineaIconos" style="background-color: red;">
+					<div class="ui-grid-a lineaIconos">
 						<div class="ui-block-a icono">
-							<a href="" ><img src="img/avatar.jpg" /></a>
+							<a rel="external" href="aplicaciones.html">
+								<button>Apps Barcelona</button>
+								<img class="iconoImg" src="img/funcionalidades/iconoAppsDescargas.png" />
+							</a>
 						</div>
 						<div class="ui-block-b icono">
-							<a href="" ><img src="img/avatar.jpg" /></a>
-						</div>
-					</div>
-					<div class="ui-grid-a lineaIconos" style="background-color: yellow;">
-						<div class="ui-block-a icono">
-							<a href="" ><img src="img/avatar.jpg" /></a>
-						</div>
-						<div class="ui-block-b icono">
-							<a href="" ><img src="img/avatar.jpg" /></a>
+							<a rel="external" href="eventos.html">
+								<button>Eventos y localizaciones</button>
+								<img class="iconoImg" src="img/funcionalidades/iconoEventos.png" />
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
+				<a rel="external" href="index.html" data-role="button" data-icon="back">Logout</a>
+			</div>
+
+			<script src="cordova.js"></script>
+			<script src="js/index.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/jquery-2.1.1.min.js"></script>
+			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
+			<script src="js/serverStub.js"></script>
+			<script src="js/header.js"></script>
 		</div>
-		
-		<script src="cordova.js"></script>
-		<script src="js/index.js"></script>
-		<script src="js/common.js"></script>
-		<script src="js/jquery-2.1.1.min.js"></script>
-		<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
 	</body>
 
 </html>

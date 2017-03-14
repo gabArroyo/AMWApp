@@ -1,0 +1,46 @@
+{
+	"status": 1,
+	"usuarios": [
+		{
+			"name":"Gabi",
+			"libros": [
+				{
+					"title": "Helsreach",
+					"autor": "Aaron Dembski Bowden",
+					"desc":"Los orkos atacan el mundo de Armageddon y una flota de Astartes es enviada en su ayuda. El veterano capellán Grimaldus y un grupo de Templarios Negros son los encargados de defender la colmena Helsreach contra los invasores xénos.",
+					"fecha": "17-03-17",
+					"lugar": "Biblioteca Central",
+					"imgURL":"img\/libros\/helsreach.jpg"
+				},
+				{
+					"title": "El Quijote",
+					"autor": "Miguel de Cervantes Saavedra",
+					"desc":"Cervantes escribió el Quijote con la intención de parodiar los libros de caballerías, que consideraba simples sartas de disparates desprovistas de todo interés. Para conseguir su propósito, ideó la historia de un hidalgo aldeano que enloquece de tanto leer las inverosímiles hazañas de héroes como Amadís y Palmerín, y que, al igual que los caballeros andantes, se echa a los caminos con el noble afán de ayudar a los necesitados.",
+					"fecha": "17-03-17",
+					"lugar": "Biblioteca Central",
+					"imgURL":"img\/libros\/quijote.jpg"
+				},
+				{
+					"title": "Recursos Inhumanos",
+					"autor": "Pierre Lemaitre",
+					"desc":"El antaño flamante director de recursos humanos Alain Delambre ha perdido toda esperanza de encontrar trabajo y se siente cada vez más marginado. Cuando una empresa de reclutamiento decide al fin considerar su candidatura, está dispuesto a todo con tal de conseguir el empleo y recuperar su dignidad, desde mentir a su esposa hasta pedirle dinero...",
+					"fecha": "17-03-17",
+					"lugar": "Biblioteca Central",
+					"imgURL":"img\/libros\/recursos.jpg"
+				}
+			]
+		},
+		{
+			"name":"Geovanna",
+			"libros": []
+		},
+		{
+			"name":"Dídac",
+			"libros": []
+		},
+		{
+			"name":"Admin",
+			"libros": []
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"status": 1,
+	"biblioteca": [
+		{
+			"id": "#1111",
+			"reservado": true,
+			"title": "El Quijote",
+			"autor": "Miguel de Cervantes Saavedra",
+			"desc":"Cervantes escribió el Quijote con la intención de parodiar los libros de caballerías, que consideraba simples sartas de disparates desprovistas de todo interés. Para conseguir su propósito, ideó la historia de un hidalgo aldeano que enloquece de tanto leer las inverosímiles hazañas de héroes como Amadís y Palmerín, y que, al igual que los caballeros andantes, se echa a los caminos con el noble afán de ayudar a los necesitados.",
+			"imgURL":"img\/libros\/quijote.jpg"
+		},
+		{
+			"id": "#2222",
+			"reservado": true,
+			"title": "Recursos Inhumanos",
+			"autor": "Pierre Lemaitre",
+			"desc":"El antaño flamante director de recursos humanos Alain Delambre ha perdido toda esperanza de encontrar trabajo y se siente cada vez más marginado. Cuando una empresa de reclutamiento decide al fin considerar su candidatura, está dispuesto a todo con tal de conseguir el empleo y recuperar su dignidad, desde mentir a su esposa hasta pedirle dinero...",
+			"imgURL":"img\/libros\/recursos.jpg"
+		},
+		{
+			"id": "#3333",
+			"reservado": false,
+			"title": "Nos vemos alla arriba",
+			"autor": "Pierre Lemaitre",
+			"desc":" En noviembre de 1918, tan sólo unos días antes del armisticio, el teniente dAulnay-Pradelle ordena una absurda ofensiva que culminará con los soldados Albert Maillard y Édouard Péricourt gravemente heridos, en un confuso y dramático incidente que ligará sus destinos inexorablemente.",
+			"imgURL":"img\/libros\/nosVemos.jpg"
+		},
+		{
+			"id": "#4444",
+			"reservado": false,
+			"title": "Offshore",
+			"autor": "Petros Markaris",
+			"desc":"La corrupción y el blanqueo de capitales protagonizan el nuevo caso del comisario Kostas Jaritos. En una Grecia que, misteriosamente, empieza a experimentar una gran recuperación económica, un funcionario de la Secretaría de Estado de Turismo aparece muerto en su casa, atado a una silla y con un tiro en la cabeza.",
+			"imgURL":"img\/libros\/offshore.jpg"
+		},
+		{
+			"id": "#5555",
+			"reservado": false,
+			"title": "Volver a casa",
+			"autor": "Yaa Gyasi",
+			"desc":"Primera novela de la escritora estadounidense de origen ghanés Yaa Gyasi, la trama de esta cautivante historia de hondo calado humano se desarrolla en la costa suroccidental de África la actual República de Ghana y en Norteamérica desde el siglo XVIII hasta la presente.",
+			"imgURL":"img\/libros\/volverACasa.jpg"
+		},
+		{
+			"id": "#6666",
+			"reservado": true,
+			"title": "Helsreach",
+			"autor": "Aaron Dembski Bowden",
+			"desc":"Los orkos atacan el mundo de Armageddon y una flota de Astartes es enviada en su ayuda. El veterano capellán Grimaldus y un grupo de Templarios Negros son los encargados de defender la colmena Helsreach contra los invasores xénos.",
+			"imgURL":"img\/libros\/helsreach.jpg"
+		}
+	]
+}

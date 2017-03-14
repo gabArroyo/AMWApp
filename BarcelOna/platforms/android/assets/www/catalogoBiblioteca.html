@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' gap://ready file://* *;
+			img-src * 'self' data:; style-src * 'self' 'unsafe-inline'; script-src * 'self' 'unsafe-inline' 'unsafe-eval';"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="msapplication-tap-highlight" content="no"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+
+
+		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
+
+		<link rel="stylesheet" href="css/catalogoBiblioteca.css"/>
+		<link rel ="stylesheet" href="css/header.css"/>
+
+		<title>Catálogo Biblioteca</title>
+	</head>
+	<body>
+		<div data-role="page">
+			<div class="headerInfoContainer" data-role="header">
+				<div class="avatarInfo">
+					<p id="name">Invitado</p>
+					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
+				</div>
+				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
+				<button class="options">OPCIONES</button>
+				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg" />
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div class="catalogoBibliotecaContainer">
+					<p class="title">Catálogo Biblioteca</p>
+
+					<div class="escogerBiblioteca">
+						<p class="title2">Seleccionar biblioteca</p>
+						<select onclick="checkValue()" name="select-choice-0" id="selectBiblioteca">
+							 <option value="central">Biblioteca Central</option>
+							 <option value="Sants">Biblioteca Sants</option>
+							 <option value="Glories">Biblioteca Glories</option>
+						</select>
+					</div>
+
+					<div class="searchCatalogo">
+						<p class="title2">Buscar libro</p>
+						<input type="search" id="search" placeholder="Buscar libro" value=""/>
+						<button onclick="buscar()">Buscar</button>
+					</div>
+
+					<div id="librosContainer" class="listaLibro">
+						<p class="title2">Libros</p>
+						<div class="libroCatalogo">
+							<img class="libroCatalogoImage" src="img/serveis/iconoBiblioteca.png"/>
+							<div class="libroCatalogoInfo">
+								<h3>Título del libro</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit magna.
+									Pellentesque et pharetra tortor. Duis velit leo, vehicula et pretium condimentum,
+									facilisis id neque. Ut sem mauris.</p>
+								<button data-role="button" data-icon="info" onclick="reservar(4444)">Reservar</button>
+							</div>
+						</div>
+						<div class="libroCatalogo">
+							<img class="libroCatalogoImage" src="img/serveis/iconoBiblioteca.png"/>
+							<div class="libroCatalogoInfo">
+								<h3>Título del libro</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit magna.
+									Pellentesque et pharetra tortor. Duis velit leo, vehicula et pretium condimentum,
+									facilisis id neque. Ut sem mauris.</p>
+								<button data-role="button" data-icon="info" onclick="reservar(3333)">Reservar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div data-role="footer" class="ui-bar navOptions" data-position="fixed">
+				<a rel="external" href="menu.html" data-role="button" data-icon="home">Menú</a>
+				<a rel="external" href="biblioteca.html" data-role="button" data-icon="back">Atrás</a>
+			</div>
+			<script src="cordova.js"></script>
+			<script src="js/index.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/jquery-2.1.1.min.js"></script>
+			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
+			<script src="js/header.js"></script>
+			<script src="js/biblioteca.js"></script>
+		</div>
+	</body>
+</html>
