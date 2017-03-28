@@ -23,10 +23,12 @@
 				<div class="avatarInfo">
 					<p id="name">Invitado</p>
 					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
+					<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
+					<button data-icon="bars" class="options">Opciones</button>
 				</div>
-				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
-				<button class="options">OPCIONES</button>
-				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg" />
+				<a class="avatarImgContainer" rel="external" href="perfil.html">
+					<img class="avatarImg" id="avatar" src="img/avatar/avatarDefault.jpg"/>
+				</a>
 			</div>
 
 			<div data-role="main" class="ui-content">
@@ -38,11 +40,13 @@
 					</div>
 					<div class="funcEmergencias">
 						<img class="emergenciasImage" src="img/serveis/iconoEmergencias.png"/>
-						<button class="emergenciasButton">Llamar a un doctor.</button>
+						<button class="emergenciasButton">Llamar a un doctor</button>
 					</div>
           <div class="funcEmergenciasMapa">
             <img class="emergenciasImage" src="img/serveis/iconoEmergenciasMapa.png"/>
-            <a rel="external" class="emergenciasButton" href="tramites.html" data-role="button">Hospital más cercano</a>
+						<a rel="external" class="emergenciasButton" href="localizacion.html" data-role="button">Hospital más cercano
+							<script>localStorage.setItem("site", "hospital");</script>
+						</a>
           </div>
 				</div>
 			</div>

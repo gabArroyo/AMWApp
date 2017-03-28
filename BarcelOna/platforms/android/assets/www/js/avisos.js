@@ -1,6 +1,5 @@
 loadAvisos();
 
-
 // Cargamos los avisos del usuario.
 function loadAvisos(){
   var user = JSON.parse(localStorage.userInfo);

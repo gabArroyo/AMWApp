@@ -19,6 +19,14 @@
                         {
                             "xml": "<uses-feature android:name=\"android.hardware.location.gps\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CALL_PHONE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -32,6 +40,10 @@
                         },
                         {
                             "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CallNumber\"><param name=\"android-package\" value=\"mx.ferreyra.callnumber.CFCallNumber\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -47,6 +59,9 @@
             "PACKAGE_NAME": "com.example.hello"
         },
         "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "call-number": {
             "PACKAGE_NAME": "com.example.hello"
         }
     },
@@ -65,11 +80,20 @@
             "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
             "pluginId": "cordova-plugin-geolocation",
             "runs": true
+        },
+        {
+            "id": "call-number.CallNumber",
+            "file": "plugins/call-number/www/CallNumber.js",
+            "pluginId": "call-number",
+            "clobbers": [
+                "call"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-compat": "1.1.0",
         "cordova-plugin-geolocation": "2.4.1",
-        "cordova-plugin-whitelist": "1.3.1"
+        "cordova-plugin-whitelist": "1.3.1",
+        "call-number": "0.0.2"
     }
 }

@@ -1,0 +1,71 @@
+html,
+body
+#recuperar{
+  height: 91%;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-content {
+  height: inherit;
+  padding: 0;
+}
+
+.logo {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.logo img{
+  display : block;
+  margin : auto;
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.recuperarForm {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 10%;
+  max-width: 450px;
+}
+
+.recuperarForm form{
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(192, 192, 192, 0.8);
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.recuperarInputContainer{
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.recuperarInput{
+  text-align: center !important;
+}
+
+.recuperarRecuperarPassword{
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.recuperarRecuperarPassword a{
+  display: block;
+  text-align: center;
+}
+
+.recuperarRecuperarContraseña{
+
+}
+
+.recuperarSubmit{
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 50%;
+}

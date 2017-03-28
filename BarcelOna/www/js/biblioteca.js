@@ -9,8 +9,21 @@ function computeDate(tiempoReserva){
   return date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear();
 }
 
+// Comprueba si es un visitante.
+function checkVisitante(){
+  var user = JSON.parse(localStorage.userInfo);
+	if(user.name == "Visitante")
+    return true;
+  return false;
+}
+
 // Reservamos una copia de un libro.
 function reservar(id){
+  if (checkVisitante() == true){
+    alert("No puedes reservar el libro si eres un visitante.");
+    return;
+  }
+
   var librosBiblioteca = JSON.parse(localStorage.booksBiblioteca);
   var reservedBook;
   for (var index = 0; index < librosBiblioteca.length; ++index) {
@@ -41,28 +54,31 @@ function buscar(){
   var htmlToWrite = "<p class=\"title2\">Libros</p>";
   var bookFound = false;
 
-  for (var index = 0; index < librosBiblioteca.length; ++index) {
-    var libro = librosBiblioteca[index];
-    var title = libro.title;
-    if (title.toLowerCase().includes(titleSearch) == false)
-      continue;
+  var biblioteca = document.getElementById('selectBiblioteca').value;
+  if (biblioteca == "central"){
+    for (var index = 0; index < librosBiblioteca.length; ++index) {
+      var libro = librosBiblioteca[index];
+      var title = libro.title;
+      if (title.toLowerCase().includes(titleSearch) == false)
+        continue;
 
-    bookFound = true;
-    var title = libro.title;
-    var autor = libro.autor;
-    var desc = libro.desc;
-    var image = libro.imgURL;
+      bookFound = true;
+      var title = libro.title;
+      var autor = libro.autor;
+      var desc = libro.desc;
+      var image = libro.imgURL;
 
-    var botonReserva = "<button class=\"ui-btn ui-icon-info ui-btn-icon-left ui-shadow ui-corner-all\"" +
-    "data-icon=\"info\" onclick=\"reservar(" + libro.id.replace('#','') + ")\">Reservar</button>";
-    if (libro.reservado == true)
-      botonReserva = "";
-    htmlToWrite +=
-    "<div class=\"libroCatalogo\">" +
-      "<img class=\"libroCatalogoImage\" src=\"" + image +"\"/>" +
-      "<div class=\"libroCatalogoInfo\">" +
-        "<h3>" + title + "</h3>" +
-        "<p>" + desc + "</p>" + botonReserva + "</div></div>";
+      var botonReserva = "<button class=\"ui-btn ui-icon-info ui-btn-icon-left ui-shadow ui-corner-all\"" +
+      "data-icon=\"info\" onclick=\"reservar(" + libro.id.replace('#','') + ")\">Reservar</button>";
+      if (libro.reservado == true)
+        botonReserva = "";
+      htmlToWrite +=
+      "<div class=\"libroCatalogo\">" +
+        "<img class=\"libroCatalogoImage\" src=\"" + image +"\"/>" +
+        "<div class=\"libroCatalogoInfo\">" +
+          "<h3>" + title + "</h3>" +
+          "<p>" + desc + "</p>" + botonReserva + "</div></div>";
+    }
   }
   var div = document.getElementById('librosContainer');
   if (bookFound == true){

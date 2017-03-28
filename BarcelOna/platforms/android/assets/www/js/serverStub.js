@@ -1,4 +1,15 @@
 /* Server stub que simula un webservice real */
+function loadInfo(){
+	if(localStorage.usersLoaded == "false")
+		getUsersServer();
+	if(localStorage.advisesLoaded == "false")
+		getUsersAvisos();
+	if(localStorage.tramitesLoaded == "false")
+		getUsersTramites();
+	if(localStorage.booksLoaded == "false")
+		getUsersBooks();
+}
+
 // Obtenemos todos los usuarios del servidor.
 function getUsersServer(){
 	$.ajax({
@@ -10,7 +21,7 @@ function getUsersServer(){
     success: function(data){
       var status = data.status;
       localStorage.listUsers = JSON.stringify(data.usuarios);
-      localStorage.usersLoaded = true;
+      localStorage.usersLoaded = "true";
     },
     failure: function(errMsg){
       alert("Error durante la comunicación con la base de usuarios.");
@@ -137,23 +148,3 @@ function webServiceGetUserBooks(userNameInput){
 	}
 	return false;
 }
-
-/* Server stub que simula un webservice real
-// Obtenemos todos los usuarios del servidor.
-function getAppsServer(){
-	$.ajax({
-    type: "GET",
-    url: "https://api.myjson.com/bins/xft7r",
-    contentType: "application/x-www-form-urlencoded; charset=utf-8",
-    async: false,
-    dataType: "json",
-    success: function(data){
-      var status = data.status;
-      localStorage.listUsers = JSON.stringify(data.usuarios);
-      localStorage.usersLoaded = "true";
-    },
-    failure: function(errMsg){
-      alert("Error durante la comunicación con la base de usuarios.");
-    }
-  });
-}*/

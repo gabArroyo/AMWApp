@@ -1,0 +1,117 @@
+.perfilContainer{
+  max-width: 450px;
+  min-height: 70%;
+
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-bottom: 35px;
+
+  background-color: white;
+  border-radius: 8px;
+}
+
+.title{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+  margin: 0;
+  padding: 5px;
+  background-color: #da2429;
+  border-radius: 4px;
+}
+
+.descripcionContainer{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descripcion{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.imagenBarrioContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.imagenBarrio{
+  width: 100%;
+  height: 200px;
+}
+
+.linea{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.interes{
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.interes a, a:hover{
+  text-decoration: none;
+}
+
+.contacto{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.contacto a, a:hover{
+  text-decoration: none;
+}
+
+.iconoImg{
+  width: 128px;
+  height: 128px;
+  max-width: 128px;
+  max-height: 128px;
+}

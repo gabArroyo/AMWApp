@@ -20,10 +20,8 @@ body
 .logo img{
   display : block;
   margin : auto;
-  width: 25%;
-  height: 25%;
   max-width: 200px;
-  max-height: 200px;
+  max-height: 150px;
 }
 
 .entradaContainer{

@@ -13,6 +13,7 @@ function getEventos(){
     type: "GET",
     url: "https://api.myjson.com/bins/vt3sf",
     contentType: "application/x-www-form-urlencoded; charset=utf-8",
+    async: false,
     dataType: "json",
     success: function(data){
       var status = data.status;
@@ -28,7 +29,7 @@ function getEventos(){
 // Las mostramos en pantalla.
 function showEventos(){
   var eventos = JSON.parse(localStorage.listaEventos);
-  var htmlToWrite = "<p class=\"title\">Eventos deportivos</p>";
+  var htmlToWrite = "<p class=\"title\">Eventos</p>";
   for (var index = 0; index < eventos.length; ++index) {
     var evento = eventos[index];
     var id = evento.id;
@@ -57,9 +58,8 @@ function showEventos(){
   div.innerHTML = htmlToWrite;
 }
 
-
+// Muestra el evento del que queremos saber mas informacion.
 function showEvent(id){
-
   var eventos = JSON.parse(localStorage.listaEventos);
   var htmlToWrite = "";
 
@@ -101,7 +101,21 @@ function showEvent(id){
   showSlides(slideIndex);
 }
 
+// Comprueba si es un visitante.
+function checkVisitante(){
+  var user = JSON.parse(localStorage.userInfo);
+	if(user.name == "Visitante")
+    return true;
+  return false;
+}
+
+// Permite asistir a un evento si no se es un visitante y no se ha marcado como asistente.
 function asistir(idEvento){
+  if (checkVisitante() == true){
+    alert("No puedes indicar que asistirás al evento si eres un visitante.");
+    return;
+  }
+
   var eventos = JSON.parse(localStorage.listaEventos);
   var userInfo = JSON.parse(localStorage.userInfo);
   var htmlToWrite = "";
@@ -109,12 +123,19 @@ function asistir(idEvento){
   for (var index = 0; index < eventos.length; ++index) {
     if(idEvento != eventos[index].id)
       continue;
-    eventos[index].asistencias.push(userInfo.name);
-    localStorage.listaEventos = JSON.stringify(eventos);
+    if (eventos[index].asistencias.indexOf(userInfo.name) == -1){
+      eventos[index].asistencias.push(userInfo.name);
+      localStorage.listaEventos = JSON.stringify(eventos);
+      alert("Te ha suscrito con éxito.");
+      window.location.href = "listaEventos.html";
+    }
+    else
+      alert("Ya estás suscrito en el evento.");
     break;
   }
 }
 
+// Retorna los asistentes.
 function getAsistentes(asistentes){
   var html = ""
   var usuarios = JSON.parse(localStorage.listUsers);

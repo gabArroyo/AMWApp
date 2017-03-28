@@ -23,37 +23,44 @@
 				<div class="avatarInfo">
 					<p id="name">Invitado</p>
 					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
+					<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
+					<button data-icon="bars" class="options">Opciones</button>
 				</div>
-				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
-				<button class="options">OPCIONES</button>
-				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg" />
+				<a class="avatarImgContainer" rel="external" href="perfil.html">
+					<img class="avatarImg" id="avatar" src="img/avatar/avatarDefault.jpg"/>
+				</a>
 			</div>
 
 			<div data-role="main" class="ui-content">
 				<div class="eventosContainer tiposEventos">
 					<p class="title">Eventos</p>
-
-          <div class="mapContainer"></div>
-
+					<p class="title2">Mapa de la ciutat</p>
+					<div class="mapContainer" id="map"></div>
+					<div class="searchCatalogo">
+						<p class="title2">Buscar evento</p>
+						<input type="search" id="search" placeholder="Buscar Evento" value=""/>
+						<button>Buscar</button>
+					</div>
+					<p class="title2">Tipos de Eventos</p>
 					<div class="tiposEventosContainer">
-						<div class="ui-grid-a categoriaEvento">
-							<div class="ui-block-a">
+						<div class="ui-grid-a ui-responsive">
+							<div class="ui-block-a evento">
                 <img src="img/eventos/ocioLogo.png"/>
 								<button>Ocio</button>
 							</div>
-							<div class="ui-block-b">
+							<div class="ui-block-b evento">
                 <img src="img/eventos/deportesLogo.png"/>
 								<a rel="external" href="listaEventos.html" data-role="button">Deportes</a>
 							</div>
 						</div>
 					</div>
           <div class="tiposEventosContainer">
-            <div class="ui-grid-a categoriaEvento">
-              <div class="ui-block-a">
-                <img src="img/eventos/CulturaLogo.png"/>
+            <div class="ui-grid-a ui-responsive">
+              <div class="ui-block-a evento">
+                <img src="img/eventos/culturaLogo.png"/>
                 <button>Cultura</button>
               </div>
-              <div class="ui-block-b">
+              <div class="ui-block-b evento">
                 <img src="img/eventos/otrosLogo.png"/>
                 <button>Otros</button>
               </div>
@@ -68,6 +75,8 @@
 			<script src="cordova.js"></script>
 			<script src="js/index.js"></script>
 			<script src="js/common.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD14xNyI-1Yn6XckxE93VAWryoZkZ4H9to&libraries=places&callback=initMap" async defer></script>
+			<script src="js/gps.js"></script>
 			<script src="js/jquery-2.1.1.min.js"></script>
 			<script src="js/jquery.mobile-1.4.5.js"></script> <!-- Include the jQuery Mobile library -->
 			<script src="js/header.js"></script>

@@ -1,6 +1,6 @@
 loadUserInfo();
 
-// Carha información de usuario en el header.
+// Muestra la información del usuario en el header.
 function loadUserInfo(){
   var user = JSON.parse(localStorage.userInfo);
   user = JSON.parse(localStorage.userInfo);

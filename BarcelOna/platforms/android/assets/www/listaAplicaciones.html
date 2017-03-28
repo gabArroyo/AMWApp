@@ -10,7 +10,7 @@
 
 		<link rel="stylesheet" href="css/themes/barcelOna.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
 
 		<link rel ="stylesheet" href="css/header.css"/>
 		<link rel="stylesheet" href="css/aplicaciones.css"/>
@@ -24,10 +24,12 @@
 				<div class="avatarInfo">
 					<p id="name">Invitado</p>
 					<button><img id="nat" class="avatarFlag" src="img/cat.png"/></button>
+					<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
+					<button data-icon="bars" class="options">Opciones</button>
 				</div>
-				<a rel="external" href="avisos.html" class="avisos" data-role="button"><span id="avisos">0 avisos<span></a>
-				<button class="options">OPCIONES</button>
-				<img id="avatar" class="avatarImg" src="img/avatar/avatarDefault.jpg" />
+				<a class="avatarImgContainer" rel="external" href="perfil.html">
+					<img class="avatarImg" id="avatar" src="img/avatar/avatarDefault.jpg"/>
+				</a>
 			</div>
 
 			<div data-role="main" class="ui-content">

@@ -9,3 +9,11 @@ function entrarVisitante(){
 	document.location.href = "menu.html";
 	webServiceGetUserAdvises(userNameInput);
 }
+
+function ifVisitanteHideServicios(){
+	var user = JSON.parse(localStorage.userInfo);
+	if(user.name == "Visitante"){
+		$("#recogidaMuebles").hide();
+		$("#tramites").hide();
+	}
+}

@@ -34,7 +34,7 @@ function loadTramites(){
     "<strong>Fecha Estimada:</strong> " + tramite.date + ".</br>" +
     "<strong>Recogelo en:</strong> " + tramite.place + "</p>" +
     "<div class=\"infoEstado\">" +
-    "<p><strong>Estado: </strong></p>" +
+    "<p><strong>Estado</strong></p>" +
     "<div class=\""+ getStateTramite(tramite.state) + "\"><p>" + tramite.state +
     "%</p></div></div></div></div>";
 

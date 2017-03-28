@@ -7,12 +7,15 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>App Barcelona</name>
+    <feature name="CallNumber">
+        <param name="android-package" value="mx.ferreyra.callnumber.CFCallNumber" />
+    </feature>
+    <name>BarcelOna</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Gestiona y accede a todos los servicios públicos de tu ciudad.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        BarcelOna
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -23,5 +26,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <icon src="www/img/LogoApp.png" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
 </widget>

@@ -1,14 +1,15 @@
 .headerInfoContainer{
-  min-width: 375px;
-  height: 56px;
-  max-height: 56px;
+  min-width: 250px;
+}
+
+.avatarImgContainer{
+  position: absolute;
+  left: 0;
+  top: -1;
+  border-radius: 200px !important;
 }
 
 .avatarImg{
-  position: absolute;
-  left: -1;
-  top: -1;
-
   width: 96px;
   max-width: 96px;
   height: 96px;
@@ -20,20 +21,17 @@
 
 .avatarInfo{
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
-
-  width: 45vw;
-  max-width: 45vw;
-  height: 46px;
-  max-height: 46px;
+  justify-content: center;
 
   background-color: #9a031e;
   border-radius: 10px;
 
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 15vw;
+  margin-left: 100px;
   padding: 0 20px;
 }
 
@@ -49,20 +47,6 @@
 .avatarFlag{
   max-width: 32px;
   max-height: 32px;
-}
-
-.avisos{
-  position: absolute;
-  top: 10px;
-  left: 70%;
-  height: auto;
-}
-
-.options{
-  position: absolute;
-  top: 5px;
-  left: 85%;
-  height: 46px;
 }
 
 .navOptions{
